@@ -1,0 +1,149 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Label 5300 2750 3    50   ~ 0
+Output
+$Comp
+L Device:R_POT_Dual RV1
+U 1 1 604496D2
+P 3500 2550
+F 0 "RV1" H 3500 2450 50  0000 C CNN
+F 1 "B100k" H 3450 2350 50  0000 C CNN
+F 2 "" H 3750 2475 50  0001 C CNN
+F 3 "~" H 3750 2475 50  0001 C CNN
+	1    3500 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 6044B86F
+P 2950 2650
+F 0 "R1" V 2850 2650 50  0000 C CNN
+F 1 "51" V 2950 2650 50  0000 C CNN
+F 2 "" V 2880 2650 50  0001 C CNN
+F 3 "~" H 2950 2650 50  0001 C CNN
+	1    2950 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 6044BEA7
+P 4000 3250
+F 0 "C2" H 3900 3350 50  0000 C CNN
+F 1 "100n" H 3850 3150 50  0000 C CNN
+F 2 "" H 4038 3100 50  0001 C CNN
+F 3 "~" H 4000 3250 50  0001 C CNN
+	1    4000 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 6044C577
+P 3650 2000
+F 0 "C1" V 3902 2000 50  0000 C CNN
+F 1 "220n" V 3811 2000 50  0000 C CNN
+F 2 "" H 3688 1850 50  0001 C CNN
+F 3 "~" H 3650 2000 50  0001 C CNN
+	1    3650 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 6044C730
+P 3750 3000
+F 0 "R2" V 3650 3000 50  0000 C CNN
+F 1 "51" V 3750 3000 50  0000 C CNN
+F 2 "" V 3680 3000 50  0001 C CNN
+F 3 "~" H 3750 3000 50  0001 C CNN
+	1    3750 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Amplifier_Operational:TL072 U1
+U 1 1 6044D6B1
+P 4800 2750
+F 0 "U1" H 4800 3117 50  0000 C CNN
+F 1 "TL072" H 4800 3026 50  0000 C CNN
+F 2 "" H 4800 2750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 4800 2750 50  0001 C CNN
+	1    4800 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 2750 5300 2750
+Wire Wire Line
+	5100 2750 5100 3100
+Wire Wire Line
+	5100 3100 4500 3100
+Wire Wire Line
+	4500 3100 4500 2850
+Connection ~ 5100 2750
+Wire Wire Line
+	3600 2650 3600 3000
+Wire Wire Line
+	4000 3000 4000 2650
+Wire Wire Line
+	4000 2650 4500 2650
+Wire Wire Line
+	3900 3000 4000 3000
+Wire Wire Line
+	5100 2000 5100 2750
+$Comp
+L Device:C C3
+U 1 1 60459B5F
+P 4200 3250
+F 0 "C3" H 4300 3350 50  0000 C CNN
+F 1 "10n" H 4350 3150 50  0000 C CNN
+F 2 "" H 4238 3100 50  0001 C CNN
+F 3 "~" H 4200 3250 50  0001 C CNN
+	1    4200 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 2000 5100 2000
+Wire Wire Line
+	3250 2450 3500 2450
+Wire Wire Line
+	3500 2000 3500 2450
+Connection ~ 3500 2450
+Wire Wire Line
+	3500 2450 3750 2450
+Wire Wire Line
+	4000 3000 4000 3100
+Connection ~ 4000 3000
+Wire Wire Line
+	4000 3100 4200 3100
+Connection ~ 4000 3100
+Wire Wire Line
+	4000 3400 4100 3400
+$Comp
+L power:GND #PWR01
+U 1 1 6045E1EC
+P 4100 3500
+F 0 "#PWR01" H 4100 3250 50  0001 C CNN
+F 1 "GND" H 4105 3327 50  0000 C CNN
+F 2 "" H 4100 3500 50  0001 C CNN
+F 3 "" H 4100 3500 50  0001 C CNN
+	1    4100 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 3400 4100 3500
+Connection ~ 4100 3400
+Wire Wire Line
+	4100 3400 4200 3400
+Text Label 2800 2650 3    50   ~ 0
+Input
+$EndSCHEMATC
