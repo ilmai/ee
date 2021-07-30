@@ -99,7 +99,7 @@ F 3 "" H 4650 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Oma:+4.5V #PWR04
+L Devboard-rescue:+4.5V-Oma #PWR04
 U 1 1 603FC9A4
 P 1950 2800
 F 0 "#PWR04" H 1950 2650 50  0001 C CNN
@@ -110,7 +110,7 @@ F 3 "" H 1950 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Oma:+4.5V #PWR05
+L Devboard-rescue:+4.5V-Oma #PWR05
 U 1 1 6040A6F4
 P 3150 850
 F 0 "#PWR05" H 3150 700 50  0001 C CNN
@@ -411,7 +411,7 @@ Connection ~ 3400 3250
 Wire Wire Line
 	3400 3250 3350 3250
 $Comp
-L Oma:+4.5V #PWR08
+L Devboard-rescue:+4.5V-Oma #PWR08
 U 1 1 604D35DC
 P 3400 2900
 F 0 "#PWR08" H 3400 2750 50  0001 C CNN
@@ -609,7 +609,7 @@ F 3 "~" H 1000 5800 50  0001 C CNN
 $EndComp
 Connection ~ 1200 5900
 $Comp
-L Oma:+4.5V #PWR01
+L Devboard-rescue:+4.5V-Oma #PWR01
 U 1 1 605E6B64
 P 1200 5550
 F 0 "#PWR01" H 1200 5400 50  0001 C CNN
@@ -953,7 +953,7 @@ F 3 "~" H 7600 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Oma:+4.5V #PWR022
+L Devboard-rescue:+4.5V-Oma #PWR022
 U 1 1 605D177A
 P 7600 1100
 F 0 "#PWR022" H 7600 950 50  0001 C CNN
@@ -1037,7 +1037,7 @@ F 3 "~" H 8800 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Oma:+4.5V #PWR025
+L Devboard-rescue:+4.5V-Oma #PWR025
 U 1 1 6059A8B5
 P 8800 1100
 F 0 "#PWR025" H 8800 950 50  0001 C CNN
@@ -1108,7 +1108,7 @@ F 3 "~" H 5950 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Oma:+4.5V #PWR019
+L Devboard-rescue:+4.5V-Oma #PWR019
 U 1 1 605A485E
 P 5950 1100
 F 0 "#PWR019" H 5950 950 50  0001 C CNN

@@ -1,0 +1,203 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CM4:Compute_Module_4_Functional U?
+U 10 1 6108B3E1
+P 4600 2400
+F 0 "U?" H 5550 2687 60  0000 C CNN
+F 1 "Compute_Module_4_Functional" H 5550 2581 60  0000 C CNN
+F 2 "" H 4800 2450 60  0001 L CNN
+F 3 "" H 4800 2250 60  0001 L CNN
+	10   4600 2400
+	1    0    0    -1  
+$EndComp
+Text GLabel 6750 3850 2    50   BiDi ~ 0
+SDA
+Text GLabel 6750 3550 2    50   Output ~ 0
+SCL
+Wire Wire Line
+	6500 3750 6650 3750
+Wire Wire Line
+	6650 3750 6650 3850
+Wire Wire Line
+	6650 3850 6750 3850
+Wire Wire Line
+	6500 3650 6650 3650
+Wire Wire Line
+	6650 3650 6650 3550
+Wire Wire Line
+	6650 3550 6750 3550
+$Comp
+L Device:R R?
+U 1 1 610937C2
+P 6600 2250
+F 0 "R?" H 6670 2296 50  0000 L CNN
+F 1 "1k" H 6670 2205 50  0000 L CNN
+F 2 "" V 6530 2250 50  0001 C CNN
+F 3 "~" H 6600 2250 50  0001 C CNN
+	1    6600 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 2500 6500 2500
+Wire Wire Line
+	6600 2500 6600 2400
+$Comp
+L power:+3.3V #PWR?
+U 1 1 61095024
+P 6600 1600
+F 0 "#PWR?" H 6600 1450 50  0001 C CNN
+F 1 "+3.3V" H 6615 1773 50  0000 C CNN
+F 2 "" H 6600 1600 50  0001 C CNN
+F 3 "" H 6600 1600 50  0001 C CNN
+	1    6600 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 61095AE9
+P 6600 1850
+F 0 "D?" V 6639 1732 50  0000 R CNN
+F 1 "Activity LED" V 6548 1732 50  0000 R CNN
+F 2 "" H 6600 1850 50  0001 C CNN
+F 3 "~" H 6600 1850 50  0001 C CNN
+	1    6600 1850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6600 2100 6600 2000
+Wire Wire Line
+	6600 1600 6600 1700
+$Comp
+L power:GND #PWR?
+U 1 1 61097007
+P 4350 3400
+F 0 "#PWR?" H 4350 3150 50  0001 C CNN
+F 1 "GND" H 4355 3227 50  0000 C CNN
+F 2 "" H 4350 3400 50  0001 C CNN
+F 3 "" H 4350 3400 50  0001 C CNN
+	1    4350 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 3400 4600 3400
+Wire Wire Line
+	4600 3300 4600 3400
+Connection ~ 4600 3400
+$Comp
+L power:GND #PWR?
+U 1 1 610980BA
+P 4350 2500
+F 0 "#PWR?" H 4350 2250 50  0001 C CNN
+F 1 "GND" H 4355 2327 50  0000 C CNN
+F 2 "" H 4350 2500 50  0001 C CNN
+F 3 "" H 4350 2500 50  0001 C CNN
+	1    4350 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 2500 4600 2500
+$Comp
+L SamacSys:SN74LVC1G07DCK3 IC?
+U 1 1 6109BF88
+P 7000 2550
+F 0 "IC?" H 7550 2815 50  0000 C CNN
+F 1 "SN74LVC1G07DCK3" H 7550 2724 50  0000 C CNN
+F 2 "SOT65P210X110-5N" H 7950 2650 50  0001 L CNN
+F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2FSN74LVC1G07" H 7950 2550 50  0001 L CNN
+F 4 "Buffers & Line Drivers Single Buffer/Driver With Open-Drain Output 5-SC70 -40 to 125" H 7950 2450 50  0001 L CNN "Description"
+F 5 "1.1" H 7950 2350 50  0001 L CNN "Height"
+F 6 "595-SN74LVC1G07DCK3" H 7950 2250 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/SN74LVC1G07DCK3?qs=2yujazEvlDGHfHemInP9Hg%3D%3D" H 7950 2150 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Texas Instruments" H 7950 2050 50  0001 L CNN "Manufacturer_Name"
+F 9 "SN74LVC1G07DCK3" H 7950 1950 50  0001 L CNN "Manufacturer_Part_Number"
+	1    7000 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 2650 6500 2650
+$Comp
+L power:GND #PWR?
+U 1 1 6109CCC3
+P 6800 2750
+F 0 "#PWR?" H 6800 2500 50  0001 C CNN
+F 1 "GND" H 6805 2577 50  0000 C CNN
+F 2 "" H 6800 2750 50  0001 C CNN
+F 3 "" H 6800 2750 50  0001 C CNN
+	1    6800 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 2750 7000 2750
+Wire Wire Line
+	8500 2650 8100 2650
+$Comp
+L Device:LED D?
+U 1 1 6109E7E2
+P 8250 1850
+F 0 "D?" V 8289 1732 50  0000 R CNN
+F 1 "Power LED" V 8198 1732 50  0000 R CNN
+F 2 "" H 8250 1850 50  0001 C CNN
+F 3 "~" H 8250 1850 50  0001 C CNN
+	1    8250 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 6109F738
+P 8500 2650
+F 0 "#PWR?" H 8500 2500 50  0001 C CNN
+F 1 "+3.3V" H 8515 2823 50  0000 C CNN
+F 2 "" H 8500 2650 50  0001 C CNN
+F 3 "" H 8500 2650 50  0001 C CNN
+	1    8500 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6109FB2A
+P 8250 2250
+F 0 "R?" H 8320 2296 50  0000 L CNN
+F 1 "1k" H 8320 2205 50  0000 L CNN
+F 2 "" V 8180 2250 50  0001 C CNN
+F 3 "~" H 8250 2250 50  0001 C CNN
+	1    8250 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 2100 8250 2000
+Wire Wire Line
+	8250 2400 8250 2550
+Wire Wire Line
+	8250 2550 8100 2550
+$Comp
+L power:+3.3V #PWR?
+U 1 1 610A06BC
+P 8250 1600
+F 0 "#PWR?" H 8250 1450 50  0001 C CNN
+F 1 "+3.3V" H 8265 1773 50  0000 C CNN
+F 2 "" H 8250 1600 50  0001 C CNN
+F 3 "" H 8250 1600 50  0001 C CNN
+	1    8250 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 1600 8250 1700
+Text GLabel 4350 3000 0    50   Input ~ 0
+RPIBOOT
+Wire Wire Line
+	4350 3000 4600 3000
+$EndSCHEMATC
