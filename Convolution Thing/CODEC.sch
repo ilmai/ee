@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 4
+Sheet 2 7
 Title ""
 Date ""
 Rev ""
@@ -92,17 +92,17 @@ $EndComp
 Connection ~ 5800 3250
 Wire Wire Line
 	5800 3250 5500 3250
-Text Label 1900 1650 2    50   ~ 0
+Text Label 1650 2000 2    50   ~ 0
 AGND
-Text Label 1900 1950 2    50   ~ 0
+Text Label 1650 2300 2    50   ~ 0
 AGND
-Text Label 4000 3150 0    50   ~ 0
-DNGD
-Text Label 4000 1850 0    50   ~ 0
+Text Label 3750 3500 0    50   ~ 0
+DGND
+Text Label 3750 2200 0    50   ~ 0
 AGND
-Text Label 4000 2050 0    50   ~ 0
+Text Label 3750 2400 0    50   ~ 0
 AGND
-Text Label 4000 1750 0    50   ~ 0
+Text Label 3750 2100 0    50   ~ 0
 FILTR
 Text Label 5500 1000 0    50   ~ 0
 AGND
@@ -153,9 +153,9 @@ Wire Wire Line
 	6950 1950 7400 1950
 Wire Wire Line
 	6950 2250 7400 2250
-Text Label 4000 1950 0    50   ~ 0
+Text Label 3750 2300 0    50   ~ 0
 AVDD
-Text Label 1900 2050 2    50   ~ 0
+Text Label 1650 2400 2    50   ~ 0
 AVDD
 Text Label 6900 1000 0    50   ~ 0
 AVDD
@@ -172,9 +172,9 @@ F 3 "" H 6350 1000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5500 1000 5500 1300
-Text Label 4000 1650 0    50   ~ 0
+Text Label 3750 2000 0    50   ~ 0
 AGND
-Text Label 4000 2950 0    50   ~ 0
+Text Label 3750 3300 0    50   ~ 0
 DGND
 Text Label 5850 1000 0    50   ~ 0
 DGND
@@ -191,30 +191,26 @@ F 3 "" H 5850 1300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5850 1000 5850 1300
-Text Label 3500 3950 3    50   ~ 0
+Text Label 3250 4300 3    50   ~ 0
 DGND
-Text GLabel 3400 4400 3    50   Output ~ 0
+Text GLabel 3150 4550 3    50   Output ~ 0
 LRCLK
 Wire Wire Line
 	6250 3250 6400 3250
 Connection ~ 6250 3250
-Wire Wire Line
-	3400 4400 3400 3950
-Text GLabel 3300 4150 3    50   Output ~ 0
+Text GLabel 3050 4550 3    50   Output ~ 0
 BCLK
-Wire Wire Line
-	3300 4150 3300 3950
-Text Label 1900 3150 2    50   ~ 0
+Text Label 1650 3500 2    50   ~ 0
 DGND
-Text Label 2500 950  1    50   ~ 0
+Text Label 2250 1300 1    50   ~ 0
 LF
 Text Label 9350 1950 2    50   ~ 0
 LF
 Text Label 9350 2850 2    50   ~ 0
 AVDD
-Text Label 2400 950  1    50   ~ 0
+Text Label 2150 1300 1    50   ~ 0
 AVDD
-Text Label 3500 950  1    50   ~ 0
+Text Label 3250 1300 1    50   ~ 0
 AVDD
 $Comp
 L Device:CP1 C?
@@ -269,7 +265,7 @@ Wire Wire Line
 Wire Wire Line
 	9950 2850 9950 2550
 Connection ~ 9450 2850
-Text Label 3400 950  1    50   ~ 0
+Text Label 3150 1300 1    50   ~ 0
 CM
 Text Label 8100 1950 2    50   ~ 0
 CM
@@ -311,7 +307,7 @@ Text Label 6100 2000 0    50   ~ 0
 RST
 Wire Wire Line
 	6100 2000 5900 2000
-Text Label 1900 2950 2    50   ~ 0
+Text Label 1650 3300 2    50   ~ 0
 RST
 $Comp
 L power:GND #PWR?
@@ -387,23 +383,23 @@ $EndComp
 $Comp
 L SamacSys:AD1937WBSTZ IC?
 U 1 1 61052169
-P 1900 1650
-F 0 "IC?" H 2900 900 50  0000 L CNN
-F 1 "AD1937WBSTZ" H 2700 800 50  0000 L CNN
-F 2 "QFP50P1200X1200X160-64N" H 3850 2150 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/2/AD1937WBSTZ.pdf" H 3850 2050 50  0001 L CNN
-F 4 "Analog Devices, Audio Codec Stereo Audio 12-channel 24bit- 192kHz Serial 64-Pin LQFP" H 3850 1950 50  0001 L CNN "Description"
-F 5 "1.6" H 3850 1850 50  0001 L CNN "Height"
-F 6 "584-AD1937WBSTZ" H 3850 1750 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Analog-Devices/AD1937WBSTZ?qs=NmRFExCfTkGjgJ1ByCN4rw%3D%3D" H 3850 1650 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Analog Devices" H 3850 1550 50  0001 L CNN "Manufacturer_Name"
-F 9 "AD1937WBSTZ" H 3850 1450 50  0001 L CNN "Manufacturer_Part_Number"
-	1    1900 1650
+P 1650 2000
+F 0 "IC?" H 2650 1250 50  0000 L CNN
+F 1 "AD1937WBSTZ" H 2450 1150 50  0000 L CNN
+F 2 "QFP50P1200X1200X160-64N" H 3600 2500 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/2/AD1937WBSTZ.pdf" H 3600 2400 50  0001 L CNN
+F 4 "Analog Devices, Audio Codec Stereo Audio 12-channel 24bit- 192kHz Serial 64-Pin LQFP" H 3600 2300 50  0001 L CNN "Description"
+F 5 "1.6" H 3600 2200 50  0001 L CNN "Height"
+F 6 "584-AD1937WBSTZ" H 3600 2100 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Analog-Devices/AD1937WBSTZ?qs=NmRFExCfTkGjgJ1ByCN4rw%3D%3D" H 3600 2000 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Analog Devices" H 3600 1900 50  0001 L CNN "Manufacturer_Name"
+F 9 "AD1937WBSTZ" H 3600 1800 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1650 2000
 	1    0    0    -1  
 $EndComp
-Text Label 2200 3950 3    50   ~ 0
+Text Label 1950 4300 3    50   ~ 0
 DVDD
-Text Label 3700 3950 3    50   ~ 0
+Text Label 3450 4300 3    50   ~ 0
 DVDD
 Text Label 5500 3250 2    50   ~ 0
 SDA
@@ -411,7 +407,7 @@ Wire Wire Line
 	6250 3150 6250 3250
 Wire Wire Line
 	6250 2800 6250 2850
-Text Label 3600 3950 3    50   ~ 0
+Text Label 3350 4300 3    50   ~ 0
 SDA
 Text Label 5500 3750 2    50   ~ 0
 SCL
@@ -420,6 +416,141 @@ Wire Wire Line
 Wire Wire Line
 	6400 3750 5800 3750
 Connection ~ 5800 3750
-Text Label 4000 3050 0    50   ~ 0
+Text Label 3750 3400 0    50   ~ 0
 SCL
+Text GLabel 4000 3200 2    50   Output ~ 0
+DAC1LP
+Text GLabel 4000 3100 2    50   Output ~ 0
+DAC1LN
+Text GLabel 4000 3000 2    50   Output ~ 0
+DAC1RP
+Text GLabel 4000 2800 2    50   Output ~ 0
+DAC2LP
+Text GLabel 4000 2600 2    50   Output ~ 0
+DAC2RP
+Text GLabel 4000 2900 2    50   Output ~ 0
+DAC1RN
+Text GLabel 4000 2700 2    50   Output ~ 0
+DAC2LN
+Text GLabel 4000 2500 2    50   Output ~ 0
+DAC2RN
+Wire Wire Line
+	4000 3200 3750 3200
+Wire Wire Line
+	4000 3000 3750 3000
+Wire Wire Line
+	4000 2800 3750 2800
+Wire Wire Line
+	4000 2600 3750 2600
+Text GLabel 1400 2500 0    50   Output ~ 0
+DAC3LP
+Text GLabel 1400 2700 0    50   Output ~ 0
+DAC3RP
+Text GLabel 1400 2900 0    50   Output ~ 0
+DAC4LP
+Text GLabel 1400 3100 0    50   Output ~ 0
+DAC4RP
+Text GLabel 1400 3200 0    50   Output ~ 0
+DAC4RN
+Text GLabel 1400 3000 0    50   Output ~ 0
+DAC4LN
+Text GLabel 1400 2800 0    50   Output ~ 0
+DAC3RN
+Text GLabel 1400 2600 0    50   Output ~ 0
+DAC3LN
+Wire Wire Line
+	1400 2500 1650 2500
+Wire Wire Line
+	1650 2700 1400 2700
+Wire Wire Line
+	1400 2900 1650 2900
+Wire Wire Line
+	1650 3100 1400 3100
+Text GLabel 2350 1150 1    50   Input ~ 0
+ADC2RN
+Text GLabel 2550 1150 1    50   Input ~ 0
+ADC2LN
+Text GLabel 2750 1150 1    50   Input ~ 0
+ADC1RN
+Text GLabel 2950 1150 1    50   Input ~ 0
+ADC1LN
+Text GLabel 3050 1150 1    50   Input ~ 0
+ADC1LP
+Text GLabel 2850 1150 1    50   Input ~ 0
+ADC1RP
+Text GLabel 2650 1150 1    50   Input ~ 0
+ADC2LP
+Text GLabel 2450 1150 1    50   Input ~ 0
+ADC2RP
+Wire Wire Line
+	1400 3200 1650 3200
+Wire Wire Line
+	1650 3000 1400 3000
+Wire Wire Line
+	1400 2800 1650 2800
+Wire Wire Line
+	1650 2600 1400 2600
+Wire Wire Line
+	3750 3100 4000 3100
+Wire Wire Line
+	4000 2900 3750 2900
+Wire Wire Line
+	3750 2700 4000 2700
+Wire Wire Line
+	4000 2500 3750 2500
+Wire Wire Line
+	2350 1300 2350 1150
+Wire Wire Line
+	2450 1150 2450 1300
+Wire Wire Line
+	2550 1300 2550 1150
+Wire Wire Line
+	2650 1150 2650 1300
+Wire Wire Line
+	2750 1300 2750 1150
+Wire Wire Line
+	2850 1150 2850 1300
+Wire Wire Line
+	2950 1300 2950 1150
+Wire Wire Line
+	3050 1150 3050 1300
+Text GLabel 2950 4550 3    50   Output ~ 0
+ADCDATA1
+Wire Wire Line
+	3050 4300 3050 4550
+Wire Wire Line
+	3150 4550 3150 4300
+Text GLabel 2850 4550 3    50   Output ~ 0
+ADCDATA2
+Wire Wire Line
+	2850 4550 2850 4300
+Wire Wire Line
+	2950 4300 2950 4550
+Text GLabel 2250 4550 3    50   Input ~ 0
+DACDATA1
+Text GLabel 2150 4550 3    50   Input ~ 0
+DACDATA2
+Text GLabel 2050 4550 3    50   Input ~ 0
+DACDATA3
+Text GLabel 1400 3400 0    50   Input ~ 0
+DACDATA4
+Wire Wire Line
+	1400 3400 1650 3400
+Wire Wire Line
+	2250 4550 2250 4300
+Wire Wire Line
+	2150 4300 2150 4550
+Wire Wire Line
+	2050 4550 2050 4300
+NoConn ~ 2050 1300
+NoConn ~ 1950 1300
+NoConn ~ 3350 1300
+NoConn ~ 3450 1300
+NoConn ~ 1650 2100
+NoConn ~ 1650 2200
+NoConn ~ 2750 4300
+NoConn ~ 2650 4300
+NoConn ~ 2550 4300
+NoConn ~ 2450 4300
+NoConn ~ 2350 4300
 $EndSCHEMATC

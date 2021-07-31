@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 4
+Sheet 4 7
 Title ""
 Date ""
 Rev ""
@@ -13,17 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L CM4:Compute_Module_4_Functional U?
-U 10 1 6108B3E1
-P 4600 2400
-F 0 "U?" H 5550 2687 60  0000 C CNN
-F 1 "Compute_Module_4_Functional" H 5550 2581 60  0000 C CNN
-F 2 "" H 4800 2450 60  0001 L CNN
-F 3 "" H 4800 2250 60  0001 L CNN
-	10   4600 2400
-	1    0    0    -1  
-$EndComp
 Text GLabel 6750 3850 2    50   BiDi ~ 0
 SDA
 Text GLabel 6750 3550 2    50   Output ~ 0
@@ -96,7 +85,6 @@ Wire Wire Line
 	4350 3400 4600 3400
 Wire Wire Line
 	4600 3300 4600 3400
-Connection ~ 4600 3400
 $Comp
 L power:GND #PWR?
 U 1 1 610980BA
@@ -200,4 +188,26 @@ Text GLabel 4350 3000 0    50   Input ~ 0
 RPIBOOT
 Wire Wire Line
 	4350 3000 4600 3000
+Connection ~ 4600 3400
+$Comp
+L CM4:Compute_Module_4_Functional U?
+U 10 1 6108B3E1
+P 4600 2400
+F 0 "U?" H 5550 2687 60  0000 C CNN
+F 1 "Compute_Module_4_Functional" H 5550 2581 60  0000 C CNN
+F 2 "" H 4800 2450 60  0001 L CNN
+F 3 "" H 4800 2250 60  0001 L CNN
+	10   4600 2400
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4600 2400
+NoConn ~ 4600 2600
+NoConn ~ 4600 2800
+NoConn ~ 4600 3100
+NoConn ~ 4600 3600
+NoConn ~ 4600 3700
+NoConn ~ 4600 3800
+NoConn ~ 6500 3900
+NoConn ~ 6500 3000
+NoConn ~ 6500 2850
 $EndSCHEMATC
