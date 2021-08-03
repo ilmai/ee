@@ -13,720 +13,313 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Device:R R?
-U 1 1 61053F9D
-P 5750 2000
-F 0 "R?" V 5543 2000 50  0000 C CNN
-F 1 "10k" V 5634 2000 50  0000 C CNN
-F 2 "" V 5680 2000 50  0001 C CNN
-F 3 "~" H 5750 2000 50  0001 C CNN
-	1    5750 2000
-	0    1    1    0   
-$EndComp
+Text Label 1300 1450 2    50   ~ 0
+VDD
+Text Label 5500 1000 0    50   ~ 0
+VCC
 $Comp
 L power:GND #PWR?
-U 1 1 61054174
-P 5500 2100
-F 0 "#PWR?" H 5500 1850 50  0001 C CNN
-F 1 "GND" H 5505 1927 50  0000 C CNN
-F 2 "" H 5500 2100 50  0001 C CNN
-F 3 "" H 5500 2100 50  0001 C CNN
-	1    5500 2100
+U 1 1 610989BE
+P 5000 1300
+F 0 "#PWR?" H 5000 1050 50  0001 C CNN
+F 1 "GND" H 5005 1127 50  0000 C CNN
+F 2 "" H 5000 1300 50  0001 C CNN
+F 3 "" H 5000 1300 50  0001 C CNN
+	1    5000 1300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5500 2100 5500 2000
-Wire Wire Line
-	5500 2000 5600 2000
-Text GLabel 6400 3250 2    50   BiDi ~ 0
-SDA
-Text GLabel 6400 3750 2    50   Input ~ 0
-SCL
-Wire Wire Line
-	6250 3250 5800 3250
-$Comp
-L power:+3.3V #PWR?
-U 1 1 610557FF
-P 6250 2800
-F 0 "#PWR?" H 6250 2650 50  0001 C CNN
-F 1 "+3.3V" H 6265 2973 50  0000 C CNN
-F 2 "" H 6250 2800 50  0001 C CNN
-F 3 "" H 6250 2800 50  0001 C CNN
-	1    6250 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 61055A00
-P 6250 3000
-F 0 "R?" H 6400 3000 50  0000 C CNN
-F 1 "2k" V 6250 3000 50  0000 C CNN
-F 2 "" V 6180 3000 50  0001 C CNN
-F 3 "~" H 6250 3000 50  0001 C CNN
-	1    6250 3000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint TP?
-U 1 1 610C2894
-P 5800 3750
-F 0 "TP?" H 5850 3850 50  0000 L CNN
-F 1 "SCL TP" H 5650 4000 50  0000 L CNN
-F 2 "" H 6000 3750 50  0001 C CNN
-F 3 "~" H 6000 3750 50  0001 C CNN
-	1    5800 3750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint TP?
-U 1 1 610C43E1
-P 5800 3250
-F 0 "TP?" H 5850 3350 50  0000 L CNN
-F 1 "SDA TP" H 5700 3500 50  0000 L CNN
-F 2 "" H 6000 3250 50  0001 C CNN
-F 3 "~" H 6000 3250 50  0001 C CNN
-	1    5800 3250
-	1    0    0    -1  
-$EndComp
-Connection ~ 5800 3250
-Wire Wire Line
-	5800 3250 5500 3250
-Text Label 1650 2000 2    50   ~ 0
-AGND
-Text Label 1650 2300 2    50   ~ 0
-AGND
-Text Label 3750 3500 0    50   ~ 0
-DGND
-Text Label 3750 2200 0    50   ~ 0
-AGND
-Text Label 3750 2400 0    50   ~ 0
-AGND
-Text Label 3750 2100 0    50   ~ 0
-FILTR
-Text Label 8550 4000 0    50   ~ 0
-AGND
-$Comp
-L power:GND #PWR?
-U 1 1 610D5DC3
-P 8550 4300
-F 0 "#PWR?" H 8550 4050 50  0001 C CNN
-F 1 "GND" H 8555 4127 50  0000 C CNN
-F 2 "" H 8550 4300 50  0001 C CNN
-F 3 "" H 8550 4300 50  0001 C CNN
-	1    8550 4300
-	1    0    0    -1  
-$EndComp
-Text Label 6850 1950 2    50   ~ 0
-FILTR
-$Comp
-L Device:C C?
-U 1 1 610D75D5
-P 6950 2100
-F 0 "C?" H 7065 2146 50  0000 L CNN
-F 1 "10uF" H 7065 2055 50  0000 L CNN
-F 2 "" H 6988 1950 50  0001 C CNN
-F 3 "~" H 6950 2100 50  0001 C CNN
-	1    6950 2100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 610D7DBA
-P 7400 2100
-F 0 "C?" H 7515 2146 50  0000 L CNN
-F 1 "100nF" H 7515 2055 50  0000 L CNN
-F 2 "" H 7438 1950 50  0001 C CNN
-F 3 "~" H 7400 2100 50  0001 C CNN
-	1    7400 2100
-	1    0    0    -1  
-$EndComp
-Text Label 6850 2250 2    50   ~ 0
-AGND
-Wire Wire Line
-	6950 1950 6850 1950
-Wire Wire Line
-	6850 2250 6950 2250
-Connection ~ 6950 1950
-Connection ~ 6950 2250
-Wire Wire Line
-	6950 1950 7400 1950
-Wire Wire Line
-	6950 2250 7400 2250
-Text Label 3750 2300 0    50   ~ 0
-AVDD2
-Text Label 1650 2400 2    50   ~ 0
-AVDD1
-Text Label 6100 1000 0    50   ~ 0
-AVDD1
-$Comp
-L power:+3.3VA #PWR?
-U 1 1 610DB7C6
-P 5550 1000
-F 0 "#PWR?" H 5550 850 50  0001 C CNN
-F 1 "+3.3VA" H 5565 1173 50  0000 C CNN
-F 2 "" H 5550 1000 50  0001 C CNN
-F 3 "" H 5550 1000 50  0001 C CNN
-	1    5550 1000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8550 4000 8550 4300
-Text Label 3750 2000 0    50   ~ 0
-AGND
-Text Label 3750 3300 0    50   ~ 0
-DGND
-Text Label 8900 4000 0    50   ~ 0
-DGND
-$Comp
-L power:GND #PWR?
-U 1 1 610E092F
-P 8900 4300
-F 0 "#PWR?" H 8900 4050 50  0001 C CNN
-F 1 "GND" H 8905 4127 50  0000 C CNN
-F 2 "" H 8900 4300 50  0001 C CNN
-F 3 "" H 8900 4300 50  0001 C CNN
-	1    8900 4300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8900 4000 8900 4300
-Text Label 3250 4300 3    50   ~ 0
-DGND
-Text GLabel 3150 4550 3    50   Output ~ 0
-LRCLK
-Wire Wire Line
-	6250 3250 6400 3250
-Connection ~ 6250 3250
-Text GLabel 3050 4550 3    50   Output ~ 0
-BCLK
-Text Label 1650 3500 2    50   ~ 0
-DGND
-Text Label 2250 1300 1    50   ~ 0
-LF
-Text Label 9400 1950 2    50   ~ 0
-LF
-Text Label 9400 2850 2    50   ~ 0
-AVDD
-Text Label 2150 1300 1    50   ~ 0
-AVDD4
-Text Label 3250 1300 1    50   ~ 0
-AVDD3
 $Comp
 L Device:CP1 C?
-U 1 1 610E7CC6
-P 9500 2200
-F 0 "C?" H 9615 2246 50  0000 L CNN
-F 1 "5.6nF" H 9615 2155 50  0000 L CNN
-F 2 "" H 9500 2200 50  0001 C CNN
-F 3 "~" H 9500 2200 50  0001 C CNN
-	1    9500 2200
+U 1 1 6109A07D
+P 5000 1150
+F 0 "C?" H 4800 1200 50  0000 L CNN
+F 1 "10uF" H 4700 1100 50  0000 L CNN
+F 2 "" H 5000 1150 50  0001 C CNN
+F 3 "~" H 5000 1150 50  0001 C CNN
+	1    5000 1150
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R?
-U 1 1 610E80EB
-P 9500 2600
-F 0 "R?" H 9570 2646 50  0000 L CNN
-F 1 "562" H 9570 2555 50  0000 L CNN
-F 2 "" V 9430 2600 50  0001 C CNN
-F 3 "~" H 9500 2600 50  0001 C CNN
-	1    9500 2600
-	1    0    0    -1  
-$EndComp
+Wire Wire Line
+	5500 1000 5250 1000
+Wire Wire Line
+	5250 1000 5000 1000
+Connection ~ 5250 1000
 $Comp
 L Device:C C?
-U 1 1 610E83AF
-P 10000 2400
-F 0 "C?" H 10115 2446 50  0000 L CNN
-F 1 "390pF" H 10115 2355 50  0000 L CNN
-F 2 "" H 10038 2250 50  0001 C CNN
-F 3 "~" H 10000 2400 50  0001 C CNN
-	1    10000 2400
+U 1 1 610D431D
+P 5250 1150
+F 0 "C?" H 5365 1196 50  0000 L CNN
+F 1 "100nF" H 5365 1105 50  0000 L CNN
+F 2 "" H 5288 1000 50  0001 C CNN
+F 3 "~" H 5250 1150 50  0001 C CNN
+	1    5250 1150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10000 2250 10000 1950
-Wire Wire Line
-	10000 1950 9500 1950
-Wire Wire Line
-	9400 1950 9500 1950
-Wire Wire Line
-	9500 1950 9500 2050
-Connection ~ 9500 1950
-Wire Wire Line
-	9500 2350 9500 2450
-Wire Wire Line
-	9400 2850 9500 2850
-Wire Wire Line
-	9500 2850 9500 2750
-Wire Wire Line
-	9500 2850 10000 2850
-Wire Wire Line
-	10000 2850 10000 2550
-Connection ~ 9500 2850
-Text Label 3150 1300 1    50   ~ 0
-CM
-Text Label 8100 1950 2    50   ~ 0
-CM
-$Comp
-L Device:C C?
-U 1 1 610EDEE8
-P 8200 2100
-F 0 "C?" H 8315 2146 50  0000 L CNN
-F 1 "47uF" H 8315 2055 50  0000 L CNN
-F 2 "" H 8238 1950 50  0001 C CNN
-F 3 "~" H 8200 2100 50  0001 C CNN
-	1    8200 2100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 610EDEEE
-P 8650 2100
-F 0 "C?" H 8765 2146 50  0000 L CNN
-F 1 "100nF" H 8765 2055 50  0000 L CNN
-F 2 "" H 8688 1950 50  0001 C CNN
-F 3 "~" H 8650 2100 50  0001 C CNN
-	1    8650 2100
-	1    0    0    -1  
-$EndComp
-Text Label 8100 2250 2    50   ~ 0
+	5250 1300 5000 1300
+Connection ~ 5000 1300
+Text Label 1300 1550 2    50   ~ 0
+DGND
+Text Label 3200 1350 0    50   ~ 0
 AGND
-Wire Wire Line
-	8200 1950 8100 1950
-Wire Wire Line
-	8100 2250 8200 2250
-Connection ~ 8200 1950
-Connection ~ 8200 2250
-Wire Wire Line
-	8200 1950 8650 1950
-Wire Wire Line
-	8200 2250 8650 2250
-Text Label 6100 2000 0    50   ~ 0
-RST
-Wire Wire Line
-	6100 2000 5900 2000
-Text Label 1650 3300 2    50   ~ 0
-RST
+Text Label 3200 1450 0    50   ~ 0
+AGND
+Text Label 3200 2050 0    50   ~ 0
+SGND
+Text Label 8500 1000 0    50   ~ 0
+AGND
+Text Label 8750 1000 0    50   ~ 0
+DGND
+Text Label 9000 1000 0    50   ~ 0
+SGND
 $Comp
 L power:GND #PWR?
-U 1 1 610F561B
-P 5550 1300
-F 0 "#PWR?" H 5550 1050 50  0001 C CNN
-F 1 "GND" H 5555 1127 50  0000 C CNN
-F 2 "" H 5550 1300 50  0001 C CNN
-F 3 "" H 5550 1300 50  0001 C CNN
-	1    5550 1300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 610F59DE
-P 5800 1150
-F 0 "C?" H 5915 1196 50  0000 L CNN
-F 1 "100nF" H 5915 1105 50  0000 L CNN
-F 2 "" H 5838 1000 50  0001 C CNN
-F 3 "~" H 5800 1150 50  0001 C CNN
-	1    5800 1150
+U 1 1 610DA6F6
+P 8750 1250
+F 0 "#PWR?" H 8750 1000 50  0001 C CNN
+F 1 "GND" H 8755 1077 50  0000 C CNN
+F 2 "" H 8750 1250 50  0001 C CNN
+F 3 "" H 8750 1250 50  0001 C CNN
+	1    8750 1250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5550 1300 5800 1300
+	8750 1250 8750 1150
 Wire Wire Line
-	5550 1000 5800 1000
+	8750 1150 9000 1150
 Wire Wire Line
-	5800 1000 6100 1000
-Connection ~ 5800 1000
-Text Label 9550 1000 0    50   ~ 0
-DVDD1
-$Comp
-L power:GND #PWR?
-U 1 1 610F842C
-P 9000 1300
-F 0 "#PWR?" H 9000 1050 50  0001 C CNN
-F 1 "GND" H 9005 1127 50  0000 C CNN
-F 2 "" H 9000 1300 50  0001 C CNN
-F 3 "" H 9000 1300 50  0001 C CNN
-	1    9000 1300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 610F8432
-P 9250 1150
-F 0 "C?" H 9365 1196 50  0000 L CNN
-F 1 "100nF" H 9365 1105 50  0000 L CNN
-F 2 "" H 9288 1000 50  0001 C CNN
-F 3 "~" H 9250 1150 50  0001 C CNN
-	1    9250 1150
-	1    0    0    -1  
-$EndComp
+	9000 1150 9000 1000
 Wire Wire Line
-	9000 1300 9250 1300
+	8750 1000 8750 1150
+Connection ~ 8750 1150
 Wire Wire Line
-	9000 1000 9250 1000
+	8750 1150 8500 1150
 Wire Wire Line
-	9250 1000 9550 1000
-Connection ~ 9250 1000
+	8500 1150 8500 1000
+Text Label 3200 1250 0    50   ~ 0
+VCC
+Text Label 6550 1000 0    50   ~ 0
+VDD
 $Comp
 L power:+3.3V #PWR?
-U 1 1 610F8DD8
-P 9000 1000
-F 0 "#PWR?" H 9000 850 50  0001 C CNN
-F 1 "+3.3V" H 9015 1173 50  0000 C CNN
-F 2 "" H 9000 1000 50  0001 C CNN
-F 3 "" H 9000 1000 50  0001 C CNN
-	1    9000 1000
+U 1 1 610DECC5
+P 6050 1000
+F 0 "#PWR?" H 6050 850 50  0001 C CNN
+F 1 "+3.3V" H 6065 1173 50  0000 C CNN
+F 2 "" H 6050 1000 50  0001 C CNN
+F 3 "" H 6050 1000 50  0001 C CNN
+	1    6050 1000
 	1    0    0    -1  
 $EndComp
 $Comp
-L SamacSys:AD1937WBSTZ IC?
-U 1 1 61052169
-P 1650 2000
-F 0 "IC?" H 2650 1250 50  0000 L CNN
-F 1 "AD1937WBSTZ" H 2450 1150 50  0000 L CNN
-F 2 "QFP50P1200X1200X160-64N" H 3600 2500 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/2/AD1937WBSTZ.pdf" H 3600 2400 50  0001 L CNN
-F 4 "Analog Devices, Audio Codec Stereo Audio 12-channel 24bit- 192kHz Serial 64-Pin LQFP" H 3600 2300 50  0001 L CNN "Description"
-F 5 "1.6" H 3600 2200 50  0001 L CNN "Height"
-F 6 "584-AD1937WBSTZ" H 3600 2100 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Analog-Devices/AD1937WBSTZ?qs=NmRFExCfTkGjgJ1ByCN4rw%3D%3D" H 3600 2000 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Analog Devices" H 3600 1900 50  0001 L CNN "Manufacturer_Name"
-F 9 "AD1937WBSTZ" H 3600 1800 50  0001 L CNN "Manufacturer_Part_Number"
-	1    1650 2000
+L power:GND #PWR?
+U 1 1 610DECCB
+P 6050 1300
+F 0 "#PWR?" H 6050 1050 50  0001 C CNN
+F 1 "GND" H 6055 1127 50  0000 C CNN
+F 2 "" H 6050 1300 50  0001 C CNN
+F 3 "" H 6050 1300 50  0001 C CNN
+	1    6050 1300
 	1    0    0    -1  
 $EndComp
-Text Label 1950 4300 3    50   ~ 0
-DVDD1
-Text Label 3450 4300 3    50   ~ 0
-DVDD2
-Text Label 5500 3250 2    50   ~ 0
-SDA
+$Comp
+L Device:CP1 C?
+U 1 1 610DECD1
+P 6050 1150
+F 0 "C?" H 5850 1200 50  0000 L CNN
+F 1 "10uF" H 5750 1100 50  0000 L CNN
+F 2 "" H 6050 1150 50  0001 C CNN
+F 3 "~" H 6050 1150 50  0001 C CNN
+	1    6050 1150
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	6250 3150 6250 3250
+	6550 1000 6300 1000
 Wire Wire Line
-	6250 2800 6250 2850
-Text Label 3350 4300 3    50   ~ 0
-SDA
-Text Label 5500 3750 2    50   ~ 0
+	6300 1000 6050 1000
+Connection ~ 6300 1000
+Connection ~ 6050 1000
+$Comp
+L Device:C C?
+U 1 1 610DECDB
+P 6300 1150
+F 0 "C?" H 6415 1196 50  0000 L CNN
+F 1 "100nF" H 6415 1105 50  0000 L CNN
+F 2 "" H 6338 1000 50  0001 C CNN
+F 3 "~" H 6300 1150 50  0001 C CNN
+	1    6300 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 1300 6050 1300
+Connection ~ 6050 1300
+$Comp
+L power:+5VA #PWR?
+U 1 1 610E013F
+P 5000 1000
+F 0 "#PWR?" H 5000 850 50  0001 C CNN
+F 1 "+5VA" H 5015 1173 50  0000 C CNN
+F 2 "" H 5000 1000 50  0001 C CNN
+F 3 "" H 5000 1000 50  0001 C CNN
+	1    5000 1000
+	1    0    0    -1  
+$EndComp
+Connection ~ 5000 1000
+Text Label 3200 1550 0    50   ~ 0
+VCOM
+Text Label 7100 1000 2    50   ~ 0
+VCOM
+$Comp
+L Device:CP1 C?
+U 1 1 610E6A81
+P 7100 1150
+F 0 "C?" H 6900 1200 50  0000 L CNN
+F 1 "10uF" H 6800 1100 50  0000 L CNN
+F 2 "" H 7100 1150 50  0001 C CNN
+F 3 "~" H 7100 1150 50  0001 C CNN
+	1    7100 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 610E6A87
+P 7350 1150
+F 0 "C?" H 7465 1196 50  0000 L CNN
+F 1 "100nF" H 7465 1105 50  0000 L CNN
+F 2 "" H 7388 1000 50  0001 C CNN
+F 3 "~" H 7350 1150 50  0001 C CNN
+	1    7350 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 1300 7100 1300
+Connection ~ 7100 1300
+$Comp
+L power:GND #PWR?
+U 1 1 610E6A7B
+P 7100 1300
+F 0 "#PWR?" H 7100 1050 50  0001 C CNN
+F 1 "GND" H 7105 1127 50  0000 C CNN
+F 2 "" H 7100 1300 50  0001 C CNN
+F 3 "" H 7100 1300 50  0001 C CNN
+	1    7100 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 1000 7350 1000
+Text GLabel 7750 1000 2    50   Output ~ 0
+CODEC_VCOM
+Wire Wire Line
+	7750 1000 7350 1000
+Connection ~ 7350 1000
+Text Label 3200 850  0    50   ~ 0
+MODE
+Text Label 9600 1000 2    50   ~ 0
+MODE
+$Comp
+L power:GND #PWR?
+U 1 1 610EE813
+P 9600 1250
+F 0 "#PWR?" H 9600 1000 50  0001 C CNN
+F 1 "GND" H 9605 1077 50  0000 C CNN
+F 2 "" H 9600 1250 50  0001 C CNN
+F 3 "" H 9600 1250 50  0001 C CNN
+	1    9600 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 1250 9600 1000
+Text Notes 9400 1600 0    50   ~ 0
+I2C Mode
+$Comp
+L SamacSys:PCM3060PW IC?
+U 1 1 610925E3
+P 1300 850
+F 0 "IC?" H 2250 1115 50  0000 C CNN
+F 1 "PCM3060PW" H 2250 1024 50  0000 C CNN
+F 2 "SOP65P640X120-28N" H 3050 950 50  0001 L CNN
+F 3 "http://componentsearchengine.com/Datasheets/1/PCM3060PW.pdf" H 3050 850 50  0001 L CNN
+F 4 "24-bit Asynchronous Stereo Audio Codec with 96/192kHz sampling rate" H 3050 750 50  0001 L CNN "Description"
+F 5 "1.2" H 3050 650 50  0001 L CNN "Height"
+F 6 "595-PCM3060PW" H 3050 550 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/PCM3060PW?qs=W5eanQMd1BDLVsOltr0iFA%3D%3D" H 3050 450 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Texas Instruments" H 3050 350 50  0001 L CNN "Manufacturer_Name"
+F 9 "PCM3060PW" H 3050 250 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1300 850 
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3200 2150
+NoConn ~ 1300 2050
+NoConn ~ 1300 2150
+NoConn ~ 1300 1650
+NoConn ~ 1300 1350
+NoConn ~ 1300 1750
+NoConn ~ 1300 1850
+Text GLabel 1000 1150 0    50   Output ~ 0
+LRCK
+Text GLabel 1000 1250 0    50   Output ~ 0
+BCK
+Text GLabel 1000 850  0    50   Input ~ 0
 SCL
-Wire Wire Line
-	5800 3750 5500 3750
-Wire Wire Line
-	6400 3750 5800 3750
-Connection ~ 5800 3750
-Text Label 3750 3400 0    50   ~ 0
-SCL
-Text GLabel 4000 3200 2    50   Output ~ 0
-DAC1LP
-Text GLabel 4000 3100 2    50   Output ~ 0
-DAC1LN
-Text GLabel 4000 3000 2    50   Output ~ 0
-DAC1RP
-Text GLabel 4000 2800 2    50   Output ~ 0
-DAC2LP
-Text GLabel 4000 2600 2    50   Output ~ 0
-DAC2RP
-Text GLabel 4000 2900 2    50   Output ~ 0
-DAC1RN
-Text GLabel 4000 2700 2    50   Output ~ 0
-DAC2LN
-Text GLabel 4000 2500 2    50   Output ~ 0
-DAC2RN
-Wire Wire Line
-	4000 3200 3750 3200
-Wire Wire Line
-	4000 3000 3750 3000
-Wire Wire Line
-	4000 2800 3750 2800
-Wire Wire Line
-	4000 2600 3750 2600
-Text GLabel 1400 2500 0    50   Output ~ 0
-DAC3LP
-Text GLabel 1400 2700 0    50   Output ~ 0
-DAC3RP
-Text GLabel 1400 2900 0    50   Output ~ 0
-DAC4LP
-Text GLabel 1400 3100 0    50   Output ~ 0
-DAC4RP
-Text GLabel 1400 3200 0    50   Output ~ 0
-DAC4RN
-Text GLabel 1400 3000 0    50   Output ~ 0
-DAC4LN
-Text GLabel 1400 2800 0    50   Output ~ 0
-DAC3RN
-Text GLabel 1400 2600 0    50   Output ~ 0
-DAC3LN
-Wire Wire Line
-	1400 2500 1650 2500
-Wire Wire Line
-	1650 2700 1400 2700
-Wire Wire Line
-	1400 2900 1650 2900
-Wire Wire Line
-	1650 3100 1400 3100
-Text GLabel 2350 1150 1    50   Input ~ 0
-ADC2RN
-Text GLabel 2550 1150 1    50   Input ~ 0
-ADC2LN
-Text GLabel 2750 1150 1    50   Input ~ 0
-ADC1RN
-Text GLabel 2950 1150 1    50   Input ~ 0
-ADC1LN
-Text GLabel 3050 1150 1    50   Input ~ 0
-ADC1LP
-Text GLabel 2850 1150 1    50   Input ~ 0
-ADC1RP
-Text GLabel 2650 1150 1    50   Input ~ 0
-ADC2LP
-Text GLabel 2450 1150 1    50   Input ~ 0
-ADC2RP
-Wire Wire Line
-	1400 3200 1650 3200
-Wire Wire Line
-	1650 3000 1400 3000
-Wire Wire Line
-	1400 2800 1650 2800
-Wire Wire Line
-	1650 2600 1400 2600
-Wire Wire Line
-	3750 3100 4000 3100
-Wire Wire Line
-	4000 2900 3750 2900
-Wire Wire Line
-	3750 2700 4000 2700
-Wire Wire Line
-	4000 2500 3750 2500
-Wire Wire Line
-	2350 1300 2350 1150
-Wire Wire Line
-	2450 1150 2450 1300
-Wire Wire Line
-	2550 1300 2550 1150
-Wire Wire Line
-	2650 1150 2650 1300
-Wire Wire Line
-	2750 1300 2750 1150
-Wire Wire Line
-	2850 1150 2850 1300
-Wire Wire Line
-	2950 1300 2950 1150
-Wire Wire Line
-	3050 1150 3050 1300
-Text GLabel 2950 4550 3    50   Output ~ 0
-ADCDATA1
-Wire Wire Line
-	3050 4300 3050 4550
-Wire Wire Line
-	3150 4550 3150 4300
-Text GLabel 2850 4550 3    50   Output ~ 0
-ADCDATA2
-Wire Wire Line
-	2850 4550 2850 4300
-Wire Wire Line
-	2950 4300 2950 4550
-Text GLabel 2250 4550 3    50   Input ~ 0
-DACDATA1
-Text GLabel 2150 4550 3    50   Input ~ 0
-DACDATA2
-Text GLabel 2050 4550 3    50   Input ~ 0
-DACDATA3
-Text GLabel 1400 3400 0    50   Input ~ 0
-DACDATA4
-Wire Wire Line
-	1400 3400 1650 3400
-Wire Wire Line
-	2250 4550 2250 4300
-Wire Wire Line
-	2150 4300 2150 4550
-Wire Wire Line
-	2050 4550 2050 4300
-NoConn ~ 2050 1300
-NoConn ~ 1950 1300
-NoConn ~ 3350 1300
-NoConn ~ 3450 1300
-NoConn ~ 1650 2100
-NoConn ~ 1650 2200
-NoConn ~ 2450 4300
-NoConn ~ 2350 4300
-Text GLabel 9000 1950 2    50   Output ~ 0
-CM
-Wire Wire Line
-	9000 1950 8650 1950
-Connection ~ 8650 1950
-Text Label 7000 1000 0    50   ~ 0
-AVDD2
-$Comp
-L power:+3.3VA #PWR?
-U 1 1 61124A27
-P 6450 1000
-F 0 "#PWR?" H 6450 850 50  0001 C CNN
-F 1 "+3.3VA" H 6465 1173 50  0000 C CNN
-F 2 "" H 6450 1000 50  0001 C CNN
-F 3 "" H 6450 1000 50  0001 C CNN
-	1    6450 1000
-	1    0    0    -1  
-$EndComp
+Text GLabel 1000 950  0    50   Input ~ 0
+SDA
+Text GLabel 1000 1050 0    50   Output ~ 0
+ADC_OUT
+Text GLabel 1000 1950 0    50   Input ~ 0
+DAC_IN
+Text Label 3200 950  0    50   ~ 0
+ADR
+Text Label 10200 1000 2    50   ~ 0
+ADR
 $Comp
 L power:GND #PWR?
-U 1 1 61124A2D
-P 6450 1300
-F 0 "#PWR?" H 6450 1050 50  0001 C CNN
-F 1 "GND" H 6455 1127 50  0000 C CNN
-F 2 "" H 6450 1300 50  0001 C CNN
-F 3 "" H 6450 1300 50  0001 C CNN
-	1    6450 1300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 61124A33
-P 6700 1150
-F 0 "C?" H 6815 1196 50  0000 L CNN
-F 1 "100nF" H 6815 1105 50  0000 L CNN
-F 2 "" H 6738 1000 50  0001 C CNN
-F 3 "~" H 6700 1150 50  0001 C CNN
-	1    6700 1150
+U 1 1 610FBA07
+P 10200 1250
+F 0 "#PWR?" H 10200 1000 50  0001 C CNN
+F 1 "GND" H 10205 1077 50  0000 C CNN
+F 2 "" H 10200 1250 50  0001 C CNN
+F 3 "" H 10200 1250 50  0001 C CNN
+	1    10200 1250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6450 1300 6700 1300
+	10200 1250 10200 1000
+Text Notes 9950 1600 0    50   ~ 0
+I2C Address = 0
+Text GLabel 3500 1050 2    50   Input ~ 0
+ADC_VIN_R
+Text GLabel 3500 1150 2    50   Input ~ 0
+ADC_VIN_L
+Text GLabel 3500 1650 2    50   Output ~ 0
+DAC_VOUT_L+
+Text GLabel 3500 1750 2    50   Output ~ 0
+DAC_VOUT_L-
+Text GLabel 3500 1850 2    50   Output ~ 0
+DAC_VOUT_R+
+Text GLabel 3500 1950 2    50   Output ~ 0
+DAC_VOUT_R-
 Wire Wire Line
-	6450 1000 6700 1000
+	3500 1950 3200 1950
 Wire Wire Line
-	6700 1000 7000 1000
-Connection ~ 6700 1000
-Text Label 7850 1000 0    50   ~ 0
-AVDD3
-$Comp
-L power:+3.3VA #PWR?
-U 1 1 61126E37
-P 7300 1000
-F 0 "#PWR?" H 7300 850 50  0001 C CNN
-F 1 "+3.3VA" H 7315 1173 50  0000 C CNN
-F 2 "" H 7300 1000 50  0001 C CNN
-F 3 "" H 7300 1000 50  0001 C CNN
-	1    7300 1000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 61126E3D
-P 7300 1300
-F 0 "#PWR?" H 7300 1050 50  0001 C CNN
-F 1 "GND" H 7305 1127 50  0000 C CNN
-F 2 "" H 7300 1300 50  0001 C CNN
-F 3 "" H 7300 1300 50  0001 C CNN
-	1    7300 1300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 61126E43
-P 7550 1150
-F 0 "C?" H 7665 1196 50  0000 L CNN
-F 1 "100nF" H 7665 1105 50  0000 L CNN
-F 2 "" H 7588 1000 50  0001 C CNN
-F 3 "~" H 7550 1150 50  0001 C CNN
-	1    7550 1150
-	1    0    0    -1  
-$EndComp
+	3200 1850 3500 1850
 Wire Wire Line
-	7300 1300 7550 1300
+	3500 1750 3200 1750
 Wire Wire Line
-	7300 1000 7550 1000
+	3200 1650 3500 1650
 Wire Wire Line
-	7550 1000 7850 1000
-Connection ~ 7550 1000
-Text Label 8700 1000 0    50   ~ 0
-AVDD4
-$Comp
-L power:+3.3VA #PWR?
-U 1 1 6112951C
-P 8150 1000
-F 0 "#PWR?" H 8150 850 50  0001 C CNN
-F 1 "+3.3VA" H 8165 1173 50  0000 C CNN
-F 2 "" H 8150 1000 50  0001 C CNN
-F 3 "" H 8150 1000 50  0001 C CNN
-	1    8150 1000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 61129522
-P 8150 1300
-F 0 "#PWR?" H 8150 1050 50  0001 C CNN
-F 1 "GND" H 8155 1127 50  0000 C CNN
-F 2 "" H 8150 1300 50  0001 C CNN
-F 3 "" H 8150 1300 50  0001 C CNN
-	1    8150 1300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 61129528
-P 8400 1150
-F 0 "C?" H 8515 1196 50  0000 L CNN
-F 1 "100nF" H 8515 1105 50  0000 L CNN
-F 2 "" H 8438 1000 50  0001 C CNN
-F 3 "~" H 8400 1150 50  0001 C CNN
-	1    8400 1150
-	1    0    0    -1  
-$EndComp
+	3500 1150 3200 1150
 Wire Wire Line
-	8150 1300 8400 1300
+	3200 1050 3500 1050
 Wire Wire Line
-	8150 1000 8400 1000
+	1000 850  1300 850 
 Wire Wire Line
-	8400 1000 8700 1000
-Connection ~ 8400 1000
-Text Label 10400 1000 0    50   ~ 0
-DVDD2
-$Comp
-L power:GND #PWR?
-U 1 1 61131515
-P 9850 1300
-F 0 "#PWR?" H 9850 1050 50  0001 C CNN
-F 1 "GND" H 9855 1127 50  0000 C CNN
-F 2 "" H 9850 1300 50  0001 C CNN
-F 3 "" H 9850 1300 50  0001 C CNN
-	1    9850 1300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 6113151B
-P 10100 1150
-F 0 "C?" H 10215 1196 50  0000 L CNN
-F 1 "100nF" H 10215 1105 50  0000 L CNN
-F 2 "" H 10138 1000 50  0001 C CNN
-F 3 "~" H 10100 1150 50  0001 C CNN
-	1    10100 1150
-	1    0    0    -1  
-$EndComp
+	1300 950  1000 950 
 Wire Wire Line
-	9850 1300 10100 1300
+	1000 1050 1300 1050
 Wire Wire Line
-	9850 1000 10100 1000
+	1300 1150 1000 1150
 Wire Wire Line
-	10100 1000 10400 1000
-Connection ~ 10100 1000
-$Comp
-L power:+3.3V #PWR?
-U 1 1 61131525
-P 9850 1000
-F 0 "#PWR?" H 9850 850 50  0001 C CNN
-F 1 "+3.3V" H 9865 1173 50  0000 C CNN
-F 2 "" H 9850 1000 50  0001 C CNN
-F 3 "" H 9850 1000 50  0001 C CNN
-	1    9850 1000
-	1    0    0    -1  
-$EndComp
-Text Label 2550 4300 3    50   ~ 0
-DGND
-Text Label 2650 4300 3    50   ~ 0
-DGND
-Text Label 2750 4300 3    50   ~ 0
-DGND
+	1000 1250 1300 1250
+Wire Wire Line
+	1300 1950 1000 1950
 $EndSCHEMATC

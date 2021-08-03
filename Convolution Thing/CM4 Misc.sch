@@ -13,22 +13,10 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 6750 3850 2    50   BiDi ~ 0
+Text GLabel 6500 3750 2    50   BiDi ~ 0
 SDA
-Text GLabel 6750 3550 2    50   Output ~ 0
+Text GLabel 6500 3650 2    50   Output ~ 0
 SCL
-Wire Wire Line
-	6500 3750 6650 3750
-Wire Wire Line
-	6650 3750 6650 3850
-Wire Wire Line
-	6650 3850 6750 3850
-Wire Wire Line
-	6500 3650 6650 3650
-Wire Wire Line
-	6650 3650 6650 3550
-Wire Wire Line
-	6650 3550 6750 3550
 $Comp
 L Device:R R?
 U 1 1 610937C2
