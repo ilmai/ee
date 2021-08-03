@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 7
+Sheet 2 9
 Title ""
 Date ""
 Rev ""
@@ -13,7 +13,7 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Label 1300 1450 2    50   ~ 0
+Text Label 1400 1450 2    50   ~ 0
 VDD
 Text Label 5500 1000 0    50   ~ 0
 VCC
@@ -58,13 +58,13 @@ $EndComp
 Wire Wire Line
 	5250 1300 5000 1300
 Connection ~ 5000 1300
-Text Label 1300 1550 2    50   ~ 0
+Text Label 1400 1550 2    50   ~ 0
 DGND
-Text Label 3200 1350 0    50   ~ 0
+Text Label 3300 1350 0    50   ~ 0
 AGND
-Text Label 3200 1450 0    50   ~ 0
+Text Label 3300 1450 0    50   ~ 0
 AGND
-Text Label 3200 2050 0    50   ~ 0
+Text Label 3300 2050 0    50   ~ 0
 SGND
 Text Label 8500 1000 0    50   ~ 0
 AGND
@@ -96,7 +96,7 @@ Wire Wire Line
 	8750 1150 8500 1150
 Wire Wire Line
 	8500 1150 8500 1000
-Text Label 3200 1250 0    50   ~ 0
+Text Label 3300 1250 0    50   ~ 0
 VCC
 Text Label 6550 1000 0    50   ~ 0
 VDD
@@ -165,7 +165,7 @@ F 3 "" H 5000 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 5000 1000
-Text Label 3200 1550 0    50   ~ 0
+Text Label 3300 1550 0    50   ~ 0
 VCOM
 Text Label 7100 1000 2    50   ~ 0
 VCOM
@@ -212,7 +212,7 @@ CODEC_VCOM
 Wire Wire Line
 	7750 1000 7350 1000
 Connection ~ 7350 1000
-Text Label 3200 850  0    50   ~ 0
+Text Label 3300 850  0    50   ~ 0
 MODE
 Text Label 9600 1000 2    50   ~ 0
 MODE
@@ -234,40 +234,40 @@ I2C Mode
 $Comp
 L SamacSys:PCM3060PW IC?
 U 1 1 610925E3
-P 1300 850
-F 0 "IC?" H 2250 1115 50  0000 C CNN
-F 1 "PCM3060PW" H 2250 1024 50  0000 C CNN
-F 2 "SOP65P640X120-28N" H 3050 950 50  0001 L CNN
-F 3 "http://componentsearchengine.com/Datasheets/1/PCM3060PW.pdf" H 3050 850 50  0001 L CNN
-F 4 "24-bit Asynchronous Stereo Audio Codec with 96/192kHz sampling rate" H 3050 750 50  0001 L CNN "Description"
-F 5 "1.2" H 3050 650 50  0001 L CNN "Height"
-F 6 "595-PCM3060PW" H 3050 550 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/PCM3060PW?qs=W5eanQMd1BDLVsOltr0iFA%3D%3D" H 3050 450 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Texas Instruments" H 3050 350 50  0001 L CNN "Manufacturer_Name"
-F 9 "PCM3060PW" H 3050 250 50  0001 L CNN "Manufacturer_Part_Number"
-	1    1300 850 
+P 1400 850
+F 0 "IC?" H 2350 1115 50  0000 C CNN
+F 1 "PCM3060PW" H 2350 1024 50  0000 C CNN
+F 2 "SOP65P640X120-28N" H 3150 950 50  0001 L CNN
+F 3 "http://componentsearchengine.com/Datasheets/1/PCM3060PW.pdf" H 3150 850 50  0001 L CNN
+F 4 "24-bit Asynchronous Stereo Audio Codec with 96/192kHz sampling rate" H 3150 750 50  0001 L CNN "Description"
+F 5 "1.2" H 3150 650 50  0001 L CNN "Height"
+F 6 "595-PCM3060PW" H 3150 550 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/PCM3060PW?qs=W5eanQMd1BDLVsOltr0iFA%3D%3D" H 3150 450 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Texas Instruments" H 3150 350 50  0001 L CNN "Manufacturer_Name"
+F 9 "PCM3060PW" H 3150 250 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1400 850 
 	1    0    0    -1  
 $EndComp
-NoConn ~ 3200 2150
-NoConn ~ 1300 2050
-NoConn ~ 1300 2150
-NoConn ~ 1300 1650
-NoConn ~ 1300 1350
-NoConn ~ 1300 1750
-NoConn ~ 1300 1850
-Text GLabel 1000 1150 0    50   Output ~ 0
-LRCK
-Text GLabel 1000 1250 0    50   Output ~ 0
-BCK
-Text GLabel 1000 850  0    50   Input ~ 0
-SCL
-Text GLabel 1000 950  0    50   Input ~ 0
-SDA
-Text GLabel 1000 1050 0    50   Output ~ 0
+NoConn ~ 3300 2150
+NoConn ~ 1400 2050
+NoConn ~ 1400 2150
+NoConn ~ 1400 1650
+NoConn ~ 1400 1350
+NoConn ~ 1400 1750
+NoConn ~ 1400 1850
+Text GLabel 1100 1150 0    50   Output ~ 0
+CODEC_LRCK
+Text GLabel 1100 1250 0    50   Output ~ 0
+CODEC_BCK
+Text GLabel 1100 850  0    50   Input ~ 0
+CODEC_SCL
+Text GLabel 1100 950  0    50   Input ~ 0
+CODEC_SDA
+Text GLabel 1100 1050 0    50   Output ~ 0
 ADC_OUT
-Text GLabel 1000 1950 0    50   Input ~ 0
+Text GLabel 1100 1950 0    50   Input ~ 0
 DAC_IN
-Text Label 3200 950  0    50   ~ 0
+Text Label 3300 950  0    50   ~ 0
 ADR
 Text Label 10200 1000 2    50   ~ 0
 ADR
@@ -286,40 +286,40 @@ Wire Wire Line
 	10200 1250 10200 1000
 Text Notes 9950 1600 0    50   ~ 0
 I2C Address = 0
-Text GLabel 3500 1050 2    50   Input ~ 0
+Text GLabel 3600 1050 2    50   Input ~ 0
 ADC_VIN_R
-Text GLabel 3500 1150 2    50   Input ~ 0
+Text GLabel 3600 1150 2    50   Input ~ 0
 ADC_VIN_L
-Text GLabel 3500 1650 2    50   Output ~ 0
+Text GLabel 3600 1650 2    50   Output ~ 0
 DAC_VOUT_L+
-Text GLabel 3500 1750 2    50   Output ~ 0
+Text GLabel 3600 1750 2    50   Output ~ 0
 DAC_VOUT_L-
-Text GLabel 3500 1850 2    50   Output ~ 0
+Text GLabel 3600 1850 2    50   Output ~ 0
 DAC_VOUT_R+
-Text GLabel 3500 1950 2    50   Output ~ 0
+Text GLabel 3600 1950 2    50   Output ~ 0
 DAC_VOUT_R-
 Wire Wire Line
-	3500 1950 3200 1950
+	3600 1950 3300 1950
 Wire Wire Line
-	3200 1850 3500 1850
+	3300 1850 3600 1850
 Wire Wire Line
-	3500 1750 3200 1750
+	3600 1750 3300 1750
 Wire Wire Line
-	3200 1650 3500 1650
+	3300 1650 3600 1650
 Wire Wire Line
-	3500 1150 3200 1150
+	3600 1150 3300 1150
 Wire Wire Line
-	3200 1050 3500 1050
+	3300 1050 3600 1050
 Wire Wire Line
-	1000 850  1300 850 
+	1100 850  1400 850 
 Wire Wire Line
-	1300 950  1000 950 
+	1400 950  1100 950 
 Wire Wire Line
-	1000 1050 1300 1050
+	1100 1050 1400 1050
 Wire Wire Line
-	1300 1150 1000 1150
+	1400 1150 1100 1150
 Wire Wire Line
-	1000 1250 1300 1250
+	1100 1250 1400 1250
 Wire Wire Line
-	1300 1950 1000 1950
+	1400 1950 1100 1950
 $EndSCHEMATC

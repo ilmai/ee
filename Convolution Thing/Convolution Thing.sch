@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
+Sheet 1 9
 Title ""
 Date ""
 Rev ""
@@ -48,5 +48,17 @@ S 4700 850  850  750
 U 61055545
 F0 "Audio In" 50
 F1 "Audio In.sch" 50
+$EndSheet
+$Sheet
+S 6700 850  850  750 
+U 6110E798
+F0 "Display" 50
+F1 "Display.sch" 50
+$EndSheet
+$Sheet
+S 7700 850  850  750 
+U 611124FC
+F0 "CV" 50
+F1 "CV.sch" 50
 $EndSheet
 $EndSCHEMATC
