@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 9
+Sheet 1 11
 Title ""
 Date ""
 Rev ""
@@ -60,5 +60,17 @@ S 7700 850  850  750
 U 611124FC
 F0 "CV" 50
 F1 "CV.sch" 50
+$EndSheet
+$Sheet
+S 8700 850  850  750 
+U 611DE4E7
+F0 "LEDs" 50
+F1 "LEDs.sch" 50
+$EndSheet
+$Sheet
+S 9700 850  800  750 
+U 61201209
+F0 "USB" 50
+F1 "USB.sch" 50
 $EndSheet
 $EndSCHEMATC

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 9
+Sheet 8 11
 Title ""
 Date ""
 Rev ""
@@ -13,4 +13,305 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L SamacSys:EA_OLEDM128-6GGA DS?
+U 1 1 61136657
+P 1300 1100
+F 0 "DS?" H 2050 1365 50  0000 C CNN
+F 1 "EA_OLEDM128-6GGA" H 2050 1274 50  0000 C CNN
+F 2 "EAOLEDM1286GGA" H 2650 1200 50  0001 L CNN
+F 3 "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwi74d_O2ZbyAhUKyxoKHT4kDm4QFnoECAkQAw&url=https%3A%2F%2Fwww.lcd-module.com%2Ffileadmin%2Feng%2Fpdf%2Fgrafik%2Foledm128-6e.pdf&usg=AOvVaw1oKrIyqRIy1bW-4cLfrIu6" H 2650 1100 50  0001 L CNN
+F 4 "OLED Displays & Accessories Graphic OLED Yellow 128x64 with glass,," H 2650 1000 50  0001 L CNN "Description"
+F 5 "3.3" H 2650 900 50  0001 L CNN "Height"
+F 6 "790-EAOLEDM1286GGA" H 2650 800 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/ELECTRONIC-ASSEMBLY/EA-OLEDM128-6GGA?qs=w%2Fv1CP2dgqoi%252BGCQnyUORg%3D%3D" H 2650 700 50  0001 L CNN "Mouser Price/Stock"
+F 8 "ELECTRONIC ASSEMBLY" H 2650 600 50  0001 L CNN "Manufacturer_Name"
+F 9 "EA OLEDM128-6GGA" H 2650 500 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1300 1100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1300 1200
+NoConn ~ 1300 1300
+NoConn ~ 1300 1400
+NoConn ~ 1300 1500
+Text Label 1300 1100 2    50   ~ 0
+GND
+Text Label 1300 1600 2    50   ~ 0
+GND
+Text Label 2800 1600 0    50   ~ 0
+GND
+Text Label 2800 2300 0    50   ~ 0
+GND
+Text Label 2800 2700 0    50   ~ 0
+GND
+Text Label 2800 2800 0    50   ~ 0
+GND
+Text Label 2800 1100 0    50   ~ 0
+VCC
+Text Label 2800 1200 0    50   ~ 0
+VCC
+Text Label 2800 2900 0    50   ~ 0
+VCC
+Text Label 2800 3000 0    50   ~ 0
+VCC
+Text Label 3500 1000 0    50   ~ 0
+GND
+$Comp
+L power:GND #PWR?
+U 1 1 6113B02C
+P 3500 1300
+F 0 "#PWR?" H 3500 1050 50  0001 C CNN
+F 1 "GND" H 3505 1127 50  0000 C CNN
+F 2 "" H 3500 1300 50  0001 C CNN
+F 3 "" H 3500 1300 50  0001 C CNN
+	1    3500 1300
+	1    0    0    -1  
+$EndComp
+Text Label 4000 1000 0    50   ~ 0
+VCC
+$Comp
+L Device:C C?
+U 1 1 6113CBE1
+P 4200 1150
+F 0 "C?" H 4315 1196 50  0000 L CNN
+F 1 "2.2uF" H 4315 1105 50  0000 L CNN
+F 2 "" H 4238 1000 50  0001 C CNN
+F 3 "~" H 4200 1150 50  0001 C CNN
+	1    4200 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6113E736
+P 4200 1300
+F 0 "#PWR?" H 4200 1050 50  0001 C CNN
+F 1 "GND" H 4205 1127 50  0000 C CNN
+F 2 "" H 4200 1300 50  0001 C CNN
+F 3 "" H 4200 1300 50  0001 C CNN
+	1    4200 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 1000 3500 1300
+Text Label 2800 2600 0    50   ~ 0
+VDD
+$Comp
+L power:+12V #PWR?
+U 1 1 611429CC
+P 4350 1000
+F 0 "#PWR?" H 4350 850 50  0001 C CNN
+F 1 "+12V" H 4365 1173 50  0000 C CNN
+F 2 "" H 4350 1000 50  0001 C CNN
+F 3 "" H 4350 1000 50  0001 C CNN
+	1    4350 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 1000 4200 1000
+Connection ~ 4200 1000
+Wire Wire Line
+	4200 1000 4000 1000
+Text Label 4800 1000 0    50   ~ 0
+VDD
+$Comp
+L Device:C C?
+U 1 1 61144392
+P 5000 1150
+F 0 "C?" H 5115 1196 50  0000 L CNN
+F 1 "100nF" H 5115 1105 50  0000 L CNN
+F 2 "" H 5038 1000 50  0001 C CNN
+F 3 "~" H 5000 1150 50  0001 C CNN
+	1    5000 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61144398
+P 5000 1300
+F 0 "#PWR?" H 5000 1050 50  0001 C CNN
+F 1 "GND" H 5005 1127 50  0000 C CNN
+F 2 "" H 5000 1300 50  0001 C CNN
+F 3 "" H 5000 1300 50  0001 C CNN
+	1    5000 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 1000 5000 1000
+Connection ~ 5000 1000
+Wire Wire Line
+	5000 1000 4800 1000
+$Comp
+L power:+3.3V #PWR?
+U 1 1 611445B1
+P 5150 1000
+F 0 "#PWR?" H 5150 850 50  0001 C CNN
+F 1 "+3.3V" H 5165 1173 50  0000 C CNN
+F 2 "" H 5150 1000 50  0001 C CNN
+F 3 "" H 5150 1000 50  0001 C CNN
+	1    5150 1000
+	1    0    0    -1  
+$EndComp
+Text Label 2800 1300 0    50   ~ 0
+VCOMH
+Text Label 2800 1400 0    50   ~ 0
+VCOMH
+Text Label 5550 1000 0    50   ~ 0
+VCOMH
+$Comp
+L Device:C C?
+U 1 1 61146336
+P 5550 1150
+F 0 "C?" H 5665 1196 50  0000 L CNN
+F 1 "2.2uF" H 5665 1105 50  0000 L CNN
+F 2 "" H 5588 1000 50  0001 C CNN
+F 3 "~" H 5550 1150 50  0001 C CNN
+	1    5550 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61147221
+P 5550 1300
+F 0 "#PWR?" H 5550 1050 50  0001 C CNN
+F 1 "GND" H 5555 1127 50  0000 C CNN
+F 2 "" H 5550 1300 50  0001 C CNN
+F 3 "" H 5550 1300 50  0001 C CNN
+	1    5550 1300
+	1    0    0    -1  
+$EndComp
+Text Label 2800 2400 0    50   ~ 0
+BS1
+Text Label 2800 2500 0    50   ~ 0
+BS0
+Text Label 7700 1250 0    50   ~ 0
+BS0
+$Comp
+L power:+3.3V #PWR?
+U 1 1 61148FFD
+P 8000 1250
+F 0 "#PWR?" H 8000 1100 50  0001 C CNN
+F 1 "+3.3V" H 8015 1423 50  0000 C CNN
+F 2 "" H 8000 1250 50  0001 C CNN
+F 3 "" H 8000 1250 50  0001 C CNN
+	1    8000 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 1250 7700 1250
+Text Label 7700 1400 0    50   ~ 0
+BS1
+$Comp
+L power:GND #PWR?
+U 1 1 61149488
+P 8000 1400
+F 0 "#PWR?" H 8000 1150 50  0001 C CNN
+F 1 "GND" H 8005 1227 50  0000 C CNN
+F 2 "" H 8000 1400 50  0001 C CNN
+F 3 "" H 8000 1400 50  0001 C CNN
+	1    8000 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 1400 7700 1400
+Text Notes 7750 1000 0    50   ~ 0
+I2C Mode
+Text Label 2800 2000 0    50   ~ 0
+SA0
+Text Label 8450 1250 0    50   ~ 0
+SA0
+$Comp
+L power:GND #PWR?
+U 1 1 6114D0D7
+P 8850 1250
+F 0 "#PWR?" H 8850 1000 50  0001 C CNN
+F 1 "GND" H 8855 1077 50  0000 C CNN
+F 2 "" H 8850 1250 50  0001 C CNN
+F 3 "" H 8850 1250 50  0001 C CNN
+	1    8850 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 1250 8450 1250
+Text Notes 8450 1000 0    50   ~ 0
+I2C Address
+Text Label 2800 1900 0    50   ~ 0
+SCL
+Text Label 2800 1800 0    50   ~ 0
+SDA
+Text Label 2800 1700 0    50   ~ 0
+SDA
+Text Notes 9300 1000 0    50   ~ 0
+I2C Interface
+Text Label 9200 1250 0    50   ~ 0
+SCL
+Text Label 9200 1400 0    50   ~ 0
+SDA
+Text GLabel 9400 1250 2    50   Input ~ 0
+DISPLAY_SCL
+Text GLabel 9400 1400 2    50   Input ~ 0
+DISPLAY_SDA
+Wire Wire Line
+	9400 1400 9200 1400
+Wire Wire Line
+	9200 1250 9400 1250
+Text Label 2800 1500 0    50   ~ 0
+IREF
+Text Label 6100 1000 0    50   ~ 0
+IREF
+$Comp
+L Device:R R?
+U 1 1 611577FF
+P 6100 1150
+F 0 "R?" H 6170 1196 50  0000 L CNN
+F 1 "910k" V 6100 1050 50  0000 L CNN
+F 2 "" V 6030 1150 50  0001 C CNN
+F 3 "~" H 6100 1150 50  0001 C CNN
+	1    6100 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61157B74
+P 6100 1300
+F 0 "#PWR?" H 6100 1050 50  0001 C CNN
+F 1 "GND" H 6105 1127 50  0000 C CNN
+F 2 "" H 6100 1300 50  0001 C CNN
+F 3 "" H 6100 1300 50  0001 C CNN
+	1    6100 1300
+	1    0    0    -1  
+$EndComp
+Text Label 2800 2100 0    50   ~ 0
+RES
+Text Label 6500 1000 0    50   ~ 0
+RES
+$Comp
+L power:GND #PWR?
+U 1 1 6115A75A
+P 6500 1300
+F 0 "#PWR?" H 6500 1050 50  0001 C CNN
+F 1 "GND" H 6505 1127 50  0000 C CNN
+F 2 "" H 6500 1300 50  0001 C CNN
+F 3 "" H 6500 1300 50  0001 C CNN
+	1    6500 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 1300 6500 1000
+Text Label 2800 2200 0    50   ~ 0
+CS
+Text Label 6900 1000 0    50   ~ 0
+CS
+$Comp
+L power:GND #PWR?
+U 1 1 6115C743
+P 6900 1300
+F 0 "#PWR?" H 6900 1050 50  0001 C CNN
+F 1 "GND" H 6905 1127 50  0000 C CNN
+F 2 "" H 6900 1300 50  0001 C CNN
+F 3 "" H 6900 1300 50  0001 C CNN
+	1    6900 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 1300 6900 1000
 $EndSCHEMATC
