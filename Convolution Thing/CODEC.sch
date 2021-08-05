@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 11
+Sheet 2 13
 Title ""
 Date ""
 Rev ""
@@ -322,4 +322,8 @@ Wire Wire Line
 	1100 1250 1400 1250
 Wire Wire Line
 	1400 1950 1100 1950
+Text Notes 4950 750  0    50   ~ 0
+36mA
+Text Notes 6000 750  0    50   ~ 0
+12mA
 $EndSCHEMATC

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 11
+Sheet 4 13
 Title ""
 Date ""
 Rev ""
@@ -14,15 +14,15 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Text GLabel 6500 3750 2    50   BiDi ~ 0
-SDA
+SDA0
 Text GLabel 6500 3650 2    50   Output ~ 0
-SCL
+SCL0
 $Comp
 L Device:R R?
 U 1 1 610937C2
 P 6600 2250
 F 0 "R?" H 6670 2296 50  0000 L CNN
-F 1 "1k" H 6670 2205 50  0000 L CNN
+F 1 "100" V 6600 2200 50  0000 L CNN
 F 2 "" V 6530 2250 50  0001 C CNN
 F 3 "~" H 6600 2250 50  0001 C CNN
 	1    6600 2250
@@ -119,7 +119,7 @@ $EndComp
 Wire Wire Line
 	6800 2750 7000 2750
 Wire Wire Line
-	8500 2650 8100 2650
+	8500 2650 8250 2650
 $Comp
 L Device:LED D?
 U 1 1 6109E7E2
@@ -147,7 +147,7 @@ L Device:R R?
 U 1 1 6109FB2A
 P 8250 2250
 F 0 "R?" H 8320 2296 50  0000 L CNN
-F 1 "1k" H 8320 2205 50  0000 L CNN
+F 1 "100" V 8250 2200 50  0000 L CNN
 F 2 "" V 8180 2250 50  0001 C CNN
 F 3 "~" H 8250 2250 50  0001 C CNN
 	1    8250 2250
@@ -172,10 +172,6 @@ F 3 "" H 8250 1600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8250 1600 8250 1700
-Text GLabel 4350 3000 0    50   Input ~ 0
-RPIBOOT
-Wire Wire Line
-	4350 3000 4600 3000
 Connection ~ 4600 3400
 $Comp
 L CM4:Compute_Module_4_Functional U?
@@ -198,4 +194,30 @@ NoConn ~ 4600 3800
 NoConn ~ 6500 3900
 NoConn ~ 6500 3000
 NoConn ~ 6500 2850
+NoConn ~ 4600 3000
+$Comp
+L Device:C C?
+U 1 1 612BD721
+P 8250 2800
+F 0 "C?" H 8365 2846 50  0000 L CNN
+F 1 "100nF" H 8365 2755 50  0000 L CNN
+F 2 "" H 8288 2650 50  0001 C CNN
+F 3 "~" H 8250 2800 50  0001 C CNN
+	1    8250 2800
+	1    0    0    -1  
+$EndComp
+Connection ~ 8250 2650
+Wire Wire Line
+	8250 2650 8100 2650
+$Comp
+L power:GND #PWR?
+U 1 1 612BDBA0
+P 8250 2950
+F 0 "#PWR?" H 8250 2700 50  0001 C CNN
+F 1 "GND" H 8255 2777 50  0000 C CNN
+F 2 "" H 8250 2950 50  0001 C CNN
+F 3 "" H 8250 2950 50  0001 C CNN
+	1    8250 2950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
