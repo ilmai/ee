@@ -18,8 +18,8 @@ L CM4:Compute_Module_4_Functional U1
 U 2 1 61088AAE
 P 900 1100
 F 0 "U1" H 1600 1387 60  0000 C CNN
-F 1 "Compute_Module_4_Functional" H 1600 1281 60  0000 C CNN
-F 2 "" H 1100 1150 60  0001 L CNN
+F 1 "Compute Module 4" H 1600 1281 60  0000 C CNN
+F 2 "CM4:Raspberry-Pi-4-Compute-Module" H 1100 1150 60  0001 L CNN
 F 3 "" H 1100 950 60  0001 L CNN
 	2    900  1100
 	1    0    0    -1  

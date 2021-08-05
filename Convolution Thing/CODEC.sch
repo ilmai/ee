@@ -237,7 +237,7 @@ U 1 1 610925E3
 P 1400 850
 F 0 "IC1" H 2350 1115 50  0000 C CNN
 F 1 "PCM3060PW" H 2350 1024 50  0000 C CNN
-F 2 "SOP65P640X120-28N" H 3150 950 50  0001 L CNN
+F 2 "SamacSys:SOP65P640X120-28N" H 3150 950 50  0001 L CNN
 F 3 "http://componentsearchengine.com/Datasheets/1/PCM3060PW.pdf" H 3150 850 50  0001 L CNN
 F 4 "24-bit Asynchronous Stereo Audio Codec with 96/192kHz sampling rate" H 3150 750 50  0001 L CNN "Description"
 F 5 "1.2" H 3150 650 50  0001 L CNN "Height"

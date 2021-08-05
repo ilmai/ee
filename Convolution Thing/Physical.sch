@@ -63,7 +63,7 @@ U 1 1 6110CF8F
 P 2300 1100
 F 0 "J22" H 2750 1400 50  0000 L CNN
 F 1 "CM4 Pins 1-100" H 2450 1300 50  0000 L CNN
-F 2 "DF40C100DS04V58" H 3150 1200 50  0001 L CNN
+F 2 "SamacSys:DF40C100DS04V58" H 3150 1200 50  0001 L CNN
 F 3 "https://www.hirose.com/product/download/?distributor=digikey&type=specSheet&lang=en&num=DF40C-100DS-0.4V(58)" H 3150 1100 50  0001 L CNN
 F 4 "Board to Board & Mezzanine Connectors 100POS 0.4MM SMD CONN RCPT GOLD" H 3150 1000 50  0001 L CNN "Description"
 F 5 "1.6" H 3150 900 50  0001 L CNN "Height"
@@ -80,7 +80,7 @@ U 1 1 6110D6EE
 P 3100 1100
 F 0 "J23" H 3550 1400 50  0000 L CNN
 F 1 "CM4 Pins 101-200" H 3250 1300 50  0000 L CNN
-F 2 "DF40C100DS04V58" H 3950 1200 50  0001 L CNN
+F 2 "SamacSys:DF40C100DS04V58" H 3950 1200 50  0001 L CNN
 F 3 "https://www.hirose.com/product/download/?distributor=digikey&type=specSheet&lang=en&num=DF40C-100DS-0.4V(58)" H 3950 1100 50  0001 L CNN
 F 4 "Board to Board & Mezzanine Connectors 100POS 0.4MM SMD CONN RCPT GOLD" H 3950 1000 50  0001 L CNN "Description"
 F 5 "1.6" H 3950 900 50  0001 L CNN "Height"

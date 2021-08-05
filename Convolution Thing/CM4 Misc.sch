@@ -92,7 +92,7 @@ U 1 1 6109BF88
 P 7000 2550
 F 0 "IC2" H 7550 2815 50  0000 C CNN
 F 1 "SN74LVC1G07DCK3" H 7550 2724 50  0000 C CNN
-F 2 "SOT65P210X110-5N" H 7950 2650 50  0001 L CNN
+F 2 "SamacSys:SOT65P210X110-5N" H 7950 2650 50  0001 L CNN
 F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2FSN74LVC1G07" H 7950 2550 50  0001 L CNN
 F 4 "Buffers & Line Drivers Single Buffer/Driver With Open-Drain Output 5-SC70 -40 to 125" H 7950 2450 50  0001 L CNN "Description"
 F 5 "1.1" H 7950 2350 50  0001 L CNN "Height"
@@ -178,8 +178,8 @@ L CM4:Compute_Module_4_Functional U1
 U 10 1 6108B3E1
 P 4600 2400
 F 0 "U1" H 5550 2687 60  0000 C CNN
-F 1 "Compute_Module_4_Functional" H 5550 2581 60  0000 C CNN
-F 2 "" H 4800 2450 60  0001 L CNN
+F 1 "Compute Module 4" H 5550 2581 60  0000 C CNN
+F 2 "CM4:Raspberry-Pi-4-Compute-Module" H 4800 2450 60  0001 L CNN
 F 3 "" H 4800 2250 60  0001 L CNN
 	10   4600 2400
 	1    0    0    -1  

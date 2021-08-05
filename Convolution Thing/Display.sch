@@ -19,7 +19,7 @@ U 1 1 61136657
 P 1300 1100
 F 0 "DS1" H 2050 1365 50  0000 C CNN
 F 1 "EA_OLEDM128-6GGA" H 2050 1274 50  0000 C CNN
-F 2 "EAOLEDM1286GGA" H 2650 1200 50  0001 L CNN
+F 2 "SamacSys:EAOLEDM1286GGA" H 2650 1200 50  0001 L CNN
 F 3 "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwi74d_O2ZbyAhUKyxoKHT4kDm4QFnoECAkQAw&url=https%3A%2F%2Fwww.lcd-module.com%2Ffileadmin%2Feng%2Fpdf%2Fgrafik%2Foledm128-6e.pdf&usg=AOvVaw1oKrIyqRIy1bW-4cLfrIu6" H 2650 1100 50  0001 L CNN
 F 4 "OLED Displays & Accessories Graphic OLED Yellow 128x64 with glass,," H 2650 1000 50  0001 L CNN "Description"
 F 5 "3.3" H 2650 900 50  0001 L CNN "Height"
