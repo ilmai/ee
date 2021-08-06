@@ -28,17 +28,6 @@ F 3 "" H 5000 1300 50  0001 C CNN
 	1    5000 1300
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:CP1 C1
-U 1 1 6109A07D
-P 5000 1150
-F 0 "C1" H 4800 1200 50  0000 L CNN
-F 1 "10uF" H 4700 1100 50  0000 L CNN
-F 2 "" H 5000 1150 50  0001 C CNN
-F 3 "~" H 5000 1150 50  0001 C CNN
-	1    5000 1150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5500 1000 5250 1000
 Wire Wire Line
@@ -50,14 +39,13 @@ U 1 1 610D431D
 P 5250 1150
 F 0 "C2" H 5365 1196 50  0000 L CNN
 F 1 "100nF" H 5365 1105 50  0000 L CNN
-F 2 "" H 5288 1000 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5288 1000 50  0001 C CNN
 F 3 "~" H 5250 1150 50  0001 C CNN
 	1    5250 1150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	5250 1300 5000 1300
-Connection ~ 5000 1300
 Text Label 1400 1550 2    50   ~ 0
 DGND
 Text Label 3300 1350 0    50   ~ 0
@@ -122,37 +110,24 @@ F 3 "" H 6050 1300 50  0001 C CNN
 	1    6050 1300
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:CP1 C3
-U 1 1 610DECD1
-P 6050 1150
-F 0 "C3" H 5850 1200 50  0000 L CNN
-F 1 "10uF" H 5750 1100 50  0000 L CNN
-F 2 "" H 6050 1150 50  0001 C CNN
-F 3 "~" H 6050 1150 50  0001 C CNN
-	1    6050 1150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6550 1000 6300 1000
 Wire Wire Line
 	6300 1000 6050 1000
 Connection ~ 6300 1000
-Connection ~ 6050 1000
 $Comp
 L Device:C C4
 U 1 1 610DECDB
 P 6300 1150
 F 0 "C4" H 6415 1196 50  0000 L CNN
 F 1 "100nF" H 6415 1105 50  0000 L CNN
-F 2 "" H 6338 1000 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6338 1000 50  0001 C CNN
 F 3 "~" H 6300 1150 50  0001 C CNN
 	1    6300 1150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	6300 1300 6050 1300
-Connection ~ 6050 1300
 $Comp
 L power:+5VA #PWR01
 U 1 1 610E013F
@@ -164,36 +139,23 @@ F 3 "" H 5000 1000 50  0001 C CNN
 	1    5000 1000
 	1    0    0    -1  
 $EndComp
-Connection ~ 5000 1000
 Text Label 3300 1550 0    50   ~ 0
 VCOM
 Text Label 7100 1000 2    50   ~ 0
 VCOM
-$Comp
-L Device:CP1 C5
-U 1 1 610E6A81
-P 7100 1150
-F 0 "C5" H 6900 1200 50  0000 L CNN
-F 1 "10uF" H 6800 1100 50  0000 L CNN
-F 2 "" H 7100 1150 50  0001 C CNN
-F 3 "~" H 7100 1150 50  0001 C CNN
-	1    7100 1150
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:C C6
 U 1 1 610E6A87
 P 7350 1150
 F 0 "C6" H 7465 1196 50  0000 L CNN
 F 1 "100nF" H 7465 1105 50  0000 L CNN
-F 2 "" H 7388 1000 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7388 1000 50  0001 C CNN
 F 3 "~" H 7350 1150 50  0001 C CNN
 	1    7350 1150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	7350 1300 7100 1300
-Connection ~ 7100 1300
 $Comp
 L power:GND #PWR05
 U 1 1 610E6A7B
@@ -326,4 +288,42 @@ Text Notes 4950 750  0    50   ~ 0
 36mA
 Text Notes 6000 750  0    50   ~ 0
 12mA
+$Comp
+L Device:C C1
+U 1 1 611004AE
+P 5000 1150
+F 0 "C1" H 4800 1200 50  0000 L CNN
+F 1 "10uF" H 4700 1100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5038 1000 50  0001 C CNN
+F 3 "~" H 5000 1150 50  0001 C CNN
+	1    5000 1150
+	1    0    0    -1  
+$EndComp
+Connection ~ 5000 1000
+Connection ~ 5000 1300
+$Comp
+L Device:C C3
+U 1 1 61100675
+P 6050 1150
+F 0 "C3" H 5850 1200 50  0000 L CNN
+F 1 "10uF" H 5750 1100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6088 1000 50  0001 C CNN
+F 3 "~" H 6050 1150 50  0001 C CNN
+	1    6050 1150
+	1    0    0    -1  
+$EndComp
+Connection ~ 6050 1000
+Connection ~ 6050 1300
+$Comp
+L Device:C C5
+U 1 1 61100A3E
+P 7100 1150
+F 0 "C5" H 6900 1200 50  0000 L CNN
+F 1 "10uF" H 6800 1100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7138 1000 50  0001 C CNN
+F 3 "~" H 7100 1150 50  0001 C CNN
+	1    7100 1150
+	1    0    0    -1  
+$EndComp
+Connection ~ 7100 1300
 $EndSCHEMATC
