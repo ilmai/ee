@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 13 13
+Sheet 12 13
 Title ""
 Date ""
 Rev ""
@@ -58,10 +58,10 @@ F 3 "~" H 1000 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Omat:DF40C-100DS-0.4V_Dummy J22
+L Omat:DF40C-100DS-0.4V_Dummy J20
 U 1 1 6110CF8F
 P 2300 1100
-F 0 "J22" H 2750 1400 50  0000 L CNN
+F 0 "J20" H 2750 1400 50  0000 L CNN
 F 1 "CM4 Pins 1-100" H 2450 1300 50  0000 L CNN
 F 2 "SamacSys:DF40C100DS04V58" H 3150 1200 50  0001 L CNN
 F 3 "https://www.hirose.com/product/download/?distributor=digikey&type=specSheet&lang=en&num=DF40C-100DS-0.4V(58)" H 3150 1100 50  0001 L CNN
@@ -75,10 +75,10 @@ F 9 "DF40C-100DS-0.4V(58)" H 3150 500 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Omat:DF40C-100DS-0.4V_Dummy J23
+L Omat:DF40C-100DS-0.4V_Dummy J21
 U 1 1 6110D6EE
 P 3100 1100
-F 0 "J23" H 3550 1400 50  0000 L CNN
+F 0 "J21" H 3550 1400 50  0000 L CNN
 F 1 "CM4 Pins 101-200" H 3250 1300 50  0000 L CNN
 F 2 "SamacSys:DF40C100DS04V58" H 3950 1200 50  0001 L CNN
 F 3 "https://www.hirose.com/product/download/?distributor=digikey&type=specSheet&lang=en&num=DF40C-100DS-0.4V(58)" H 3950 1100 50  0001 L CNN
@@ -92,10 +92,10 @@ F 9 "DF40C-100DS-0.4V(58)" H 3950 500 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Omat:Conn_01x20_Female_Dummy J24
+L Omat:Conn_01x20_Female_Dummy J22
 U 1 1 6111628A
 P 4450 1900
-F 0 "J24" H 4400 3000 50  0000 L CNN
+F 0 "J22" H 4400 3000 50  0000 L CNN
 F 1 "OLED Pins 1-20" H 4150 2900 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x20_P2.54mm_Vertical" H 4450 1900 50  0001 C CNN
 F 3 "~" H 4450 1900 50  0001 C CNN
@@ -103,10 +103,10 @@ F 3 "~" H 4450 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Omat:Conn_01x20_Female_Dummy J25
+L Omat:Conn_01x20_Female_Dummy J23
 U 1 1 6111AB29
 P 5250 1900
-F 0 "J25" H 5200 3000 50  0000 L CNN
+F 0 "J23" H 5200 3000 50  0000 L CNN
 F 1 "OLED Pins 21-40" H 4950 2900 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x20_P2.54mm_Vertical" H 5250 1900 50  0001 C CNN
 F 3 "~" H 5250 1900 50  0001 C CNN

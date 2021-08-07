@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 1750 850  800  750 
+S 2700 850  850  750 
 U 61029798
 F0 "CODEC" 50
 F1 "CODEC.sch" 50
@@ -26,16 +26,10 @@ F0 "PSU" 50
 F1 "PSU.sch" 50
 $EndSheet
 $Sheet
-S 2700 850  850  750 
-U 6108AFC4
-F0 "CM4 Misc" 50
-F1 "CM4 Misc.sch" 50
-$EndSheet
-$Sheet
 S 3700 850  850  750 
 U 610884FE
-F0 "CM4 GPIO" 50
-F1 "CM4 GPIO.sch" 50
+F0 "GPIO" 50
+F1 "GPIO.sch" 50
 $EndSheet
 $Sheet
 S 5700 850  850  750 
@@ -84,5 +78,11 @@ S 1750 1850 800  750
 U 610E9296
 F0 "Physical" 50
 F1 "Physical.sch" 50
+$EndSheet
+$Sheet
+S 1750 850  850  750 
+U 6121D935
+F0 "CM4" 50
+F1 "CM4.sch" 50
 $EndSheet
 $EndSCHEMATC
