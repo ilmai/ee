@@ -608,13 +608,13 @@ Text Label 3000 4900 2    50   ~ 0
 CH1
 $Comp
 L Amplifier_Operational:MCP6004 U6
-U 2 1 6112EF95
+U 4 1 6112EF95
 P 1900 4900
 F 0 "U6" H 1900 5250 50  0000 C CNN
 F 1 "MCP6004" H 1900 5150 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 1850 5000 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 1950 5100 50  0001 C CNN
-	2    1900 4900
+	4    1900 4900
 	1    0    0    1   
 $EndComp
 $Comp
@@ -749,13 +749,13 @@ Text Label 3000 6400 2    50   ~ 0
 CH2
 $Comp
 L Amplifier_Operational:MCP6004 U6
-U 3 1 61134A88
+U 2 1 61134A88
 P 1900 6400
 F 0 "U6" H 1900 6750 50  0000 C CNN
 F 1 "MCP6004" H 1900 6650 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 1850 6500 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 1950 6600 50  0001 C CNN
-	3    1900 6400
+	2    1900 6400
 	1    0    0    1   
 $EndComp
 $Comp
@@ -890,13 +890,13 @@ Text Label 5500 3400 2    50   ~ 0
 CH3
 $Comp
 L Amplifier_Operational:MCP6004 U6
-U 4 1 611437DD
+U 3 1 611437DD
 P 4400 3400
 F 0 "U6" H 4400 3750 50  0000 C CNN
 F 1 "MCP6004" H 4400 3650 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4350 3500 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 4450 3600 50  0001 C CNN
-	4    4400 3400
+	3    4400 3400
 	1    0    0    1   
 $EndComp
 $Comp
@@ -1030,17 +1030,6 @@ $EndComp
 Text Label 5500 4900 2    50   ~ 0
 CH4
 $Comp
-L Amplifier_Operational:MCP6004 U7
-U 1 1 6114382C
-P 4400 4900
-F 0 "U7" H 4400 5250 50  0000 C CNN
-F 1 "MCP6004" H 4400 5150 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4350 5000 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 4450 5100 50  0001 C CNN
-	1    4400 4900
-	1    0    0    1   
-$EndComp
-$Comp
 L Device:R R36
 U 1 1 61143832
 P 3850 4800
@@ -1172,13 +1161,13 @@ Text Label 5500 6400 2    50   ~ 0
 CH5
 $Comp
 L Amplifier_Operational:MCP6004 U7
-U 2 1 6114387B
+U 4 1 6114387B
 P 4400 6400
 F 0 "U7" H 4400 6750 50  0000 C CNN
 F 1 "MCP6004" H 4400 6650 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4350 6500 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 4450 6600 50  0001 C CNN
-	2    4400 6400
+	4    4400 6400
 	1    0    0    1   
 $EndComp
 $Comp
@@ -1313,13 +1302,13 @@ Text Label 8000 3400 2    50   ~ 0
 CH6
 $Comp
 L Amplifier_Operational:MCP6004 U7
-U 3 1 61156AFF
+U 2 1 61156AFF
 P 6900 3400
 F 0 "U7" H 6900 3750 50  0000 C CNN
 F 1 "MCP6004" H 6900 3650 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6850 3500 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 6950 3600 50  0001 C CNN
-	3    6900 3400
+	2    6900 3400
 	1    0    0    1   
 $EndComp
 $Comp
@@ -1454,13 +1443,13 @@ Text Label 8000 4900 2    50   ~ 0
 CH7
 $Comp
 L Amplifier_Operational:MCP6004 U7
-U 4 1 61156B4E
+U 3 1 61156B4E
 P 6900 4900
 F 0 "U7" H 6900 5250 50  0000 C CNN
 F 1 "MCP6004" H 6900 5150 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6850 5000 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 6950 5100 50  0001 C CNN
-	4    6900 4900
+	3    6900 4900
 	1    0    0    1   
 $EndComp
 $Comp
@@ -1994,4 +1983,15 @@ Text GLabel 7650 1350 2    50   Input ~ 0
 CM4_SDA3
 Wire Wire Line
 	4200 1000 3900 1000
+$Comp
+L Amplifier_Operational:MCP6004 U7
+U 1 1 6114382C
+P 4400 4900
+F 0 "U7" H 4400 5250 50  0000 C CNN
+F 1 "MCP6004" H 4400 5150 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4350 5000 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 4450 5100 50  0001 C CNN
+	1    4400 4900
+	1    0    0    1   
+$EndComp
 $EndSCHEMATC

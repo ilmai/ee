@@ -91,26 +91,4 @@ F 9 "DF40C-100DS-0.4V(58)" H 3950 500 50  0001 L CNN "Manufacturer_Part_Number"
 	1    3100 1100
 	1    0    0    -1  
 $EndComp
-$Comp
-L Omat:Conn_01x20_Female_Dummy J22
-U 1 1 6111628A
-P 4450 1900
-F 0 "J22" H 4400 3000 50  0000 L CNN
-F 1 "OLED Pins 1-20" H 4150 2900 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x20_P2.54mm_Vertical" H 4450 1900 50  0001 C CNN
-F 3 "~" H 4450 1900 50  0001 C CNN
-	1    4450 1900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Omat:Conn_01x20_Female_Dummy J23
-U 1 1 6111AB29
-P 5250 1900
-F 0 "J23" H 5200 3000 50  0000 L CNN
-F 1 "OLED Pins 21-40" H 4950 2900 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x20_P2.54mm_Vertical" H 5250 1900 50  0001 C CNN
-F 3 "~" H 5250 1900 50  0001 C CNN
-	1    5250 1900
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC
