@@ -1,4 +1,4 @@
-update=8.8.2021 21.51.03
+update=9.8.2021 23.00.39
 version=1
 last_client=kicad
 [general]
@@ -26,7 +26,7 @@ ERC_TestSimilarLabels=1
 version=1
 PageLayoutDescrFile=
 LastNetListRead=
-CopperLayerCount=4
+CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
 AllowBlindVias=0
@@ -49,13 +49,7 @@ TrackWidth8=0.9
 TrackWidth9=1
 TrackWidth10=1.9
 ViaDiameter1=0.45
-ViaDrill1=0.25
-ViaDiameter2=0.5
-ViaDrill2=0.3
-ViaDiameter3=0.65
-ViaDrill3=0.45
-ViaDiameter4=1.2
-ViaDrill4=1
+ViaDrill1=0.3
 dPairWidth1=0.2
 dPairGap1=0.25
 dPairViaGap1=0.25
@@ -91,13 +85,13 @@ Name=F.Cu
 Type=0
 Enabled=1
 [pcbnew/Layer.In1.Cu]
-Name=Gnd.Cu
-Type=1
-Enabled=1
-[pcbnew/Layer.In2.Cu]
-Name=I.Cu
+Name=In1.Cu
 Type=0
-Enabled=1
+Enabled=0
+[pcbnew/Layer.In2.Cu]
+Name=In2.Cu
+Type=0
+Enabled=0
 [pcbnew/Layer.In3.Cu]
 Name=In3.Cu
 Type=0
@@ -258,7 +252,7 @@ Name=Default
 Clearance=0.1
 TrackWidth=0.25
 ViaDiameter=0.45
-ViaDrill=0.25
+ViaDrill=0.3
 uViaDiameter=0.3
 uViaDrill=0.1
 dPairWidth=0.2
